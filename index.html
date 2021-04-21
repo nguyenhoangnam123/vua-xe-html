@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome pro 5 -->
+    <link
+      rel="stylesheet"
+      href="/Assets/font/fontawesome-pro-5.15.2-web/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <link rel="stylesheet" href="/Style/utils.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="relative bg-body">
+    <!-- Header -->
+    <header class="w-100">
+      <nav>
+        <div class="container no-padding">
+          <!-- menu-header top -->
+          <div
+            class="hidden xl:flex flex-wrap align-items-stretch justify-content-between bg-transparent py-3"
+            id="menu-header__top"
+          >
+            <div class="block">
+              <div class="w-100">
+                <div class="d-flex flex-wrap">
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center mr-5">
+                      <img src="/Assets/icon/phone.svg" alt="" class="mr-1" />
+                      <div class="text-description text-sm c-white">
+                        0965131 633
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <img src="/Assets/icon/dollar.svg" alt="" class="mr-1" />
+                      <div class="text-description text-sm c-white uppercase">
+                        Báo giá
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="w-100">
+                <div class="d-flex flex-wrap">
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center mr-5">
+                      <img src="/Assets/icon/save.svg" alt="" class="mr-1" />
+                      <div class="text-description text-sm c-white uppercase">
+                        Xe đã lưu
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center mr-5">
+                      <div class="text-description text-sm c-white uppercase">
+                        Đăng ký
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center mr-5">
+                      <div class="text-description text-sm c-white uppercase">
+                        Đăng nhập
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end menu header top -->
+          <!-- menu header behind -->
+          <div
+            class="d-flex flex-wrap align-items-stretch justify-content-between py-3 shadow-lg bg-white relative"
+            id="menu-header__behind"
+          >
+            <div
+              class="d-flex xl:hidden align-items-center menu-header-behind__item"
+              id="menu-header-behind__hambuger"
+            >
+              <a href="#">
+                <img src="/Assets/icon/mobile-hambuger.svg" alt="" />
+              </a>
+            </div>
+            <div
+              class="relative d-flex flex-1 justify-items-start align-items-stretch"
+            >
+              <!-- mobile logo -->
+              <div class="block xl:hidden flex-shrink-0" id="mobile-logo">
+                <a href="#">
+                  <img src="/Assets/image/logo-simple.png" alt="logo" />
+                </a>
+              </div>
+              <!-- end mobile logo -->
+              <!-- desktop logo -->
+              <div class="hidden xl:block flex-shrink-0" id="logo">
+                <a href="#">
+                  <img src="/Assets/image/logo.png" alt="logo" />
+                </a>
+              </div>
+              <!-- end desktop logo -->
+              <!-- menu header large screen -->
+              <div class="hidden xl:block">
+                <div class="d-flex h-100">
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Mua bán xe</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Đánh giá xe</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Kinh nghiệm</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Tư vấn</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Otowiki</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Tin tức</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-sm">
+                      <div class="d-flex align-items-center">
+                        <img src="/Assets/icon/hambuger.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="absolute hidden xl:block inset-y-0"
+                id="menu-header-behind_setting"
+              >
+                <div class="d-flex h-100">
+                  <!-- desktop search -->
+                  <div
+                    class="d-flex relative align-items-center menu-header-behind__item justify-content-end"
+                  >
+                    <img src="/Assets/icon/search.svg" alt="" />
+                  </div>
+                  <!-- end desktop search -->
+                  <!-- postSales button -->
+                  <div
+                    class="d-flex align-items-center menu-header-behind__item justify-content-end"
+                  >
+                    <a
+                      href="#"
+                      class="bg-main-gradient c-white text-center block uppercase"
+                      id="post-sales-button"
+                    >
+                      Đăng tin
+                    </a>
+                  </div>
+                  <!-- end PostSales button -->
+                </div>
+              </div>
+              <!-- end menu header large screen -->
+            </div>
+          </div>
+          <!-- menu menu header behind -->
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Main -->
+    <main>
+      <section class="swiper-container" id="hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img src="/Assets/image/hero1.jpg" alt="" class="w-100" />
+            <div
+              class="container no-padding absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
+            >
+              <div class="w-100">
+                <p>Trải nghiệm chiếc xe trong mơ của bạn</p>
+                <h1 class="text-heading">911 Carrera Models</h1>
+                <a href="#" class="uppercase c-white"
+                  >Tìm hiểu ngay &nbsp; <i class="fal fa-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img src="/Assets/image/hero2.jpg" alt="" class="w-100" />
+            <div
+              class="container no-padding absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
+            >
+              <div class="w-100">
+                <p>Trải nghiệm chiếc xe trong mơ của bạn</p>
+                <h1 class="text-heading">911 Carrera Models</h1>
+                <a href="#" class="uppercase c-white"
+                  >Tìm hiểu ngay &nbsp; <i class="fal fa-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img src="/Assets/image/hero3.jpg" alt="" class="w-100" />
+            <div
+              class="container no-padding absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
+            >
+              <div class="w-100">
+                <p>Trải nghiệm chiếc xe trong mơ của bạn</p>
+                <h1 class="text-heading">911 Carrera Models</h1>
+                <a href="#" class="uppercase c-white"
+                  >Tìm hiểu ngay &nbsp; <i class="fal fa-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- controller -->
+        <div class="swiper-button-next hero-next">
+          <i class="fal fa-chevron-right"></i>
+        </div>
+        <div class="swiper-button-prev hero-prev">
+          <i class="fal fa-chevron-left"></i>
+        </div>
+      </section>
+    </main>
+    <!-- End Main -->
+  </body>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper("#hero", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>

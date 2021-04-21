@@ -1,0 +1,186 @@
+/* color */
+.c-main {
+  color: var(--main-color);
+}
+
+.c-yellow {
+  color: var(--yellow-color);
+}
+
+.c-gray {
+  color: var(--gray-color);
+}
+
+.c-dark {
+  color: var(--dark-color);
+}
+
+.c-light-gray {
+  color: var(--light-gray-color);
+}
+
+.c-light {
+  color: var(--light-color);
+}
+
+.c-white {
+  color: var(--white-color);
+}
+
+.c-body {
+  color: var(--body-color);
+}
+
+/* background */
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-main-gradient {
+  background: var(--main-gradient);
+  backdrop-filter: blur(11px);
+}
+
+.bg-main {
+  background: var(--main-color);
+}
+
+.bg-yellow {
+  background: var(--yellow-color);
+}
+
+.bg-gray {
+  background: var(--gray-color);
+}
+
+.bg-dark {
+  background: var(--dark-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+}
+
+.bg-white {
+  background: var(--white-color);
+}
+
+.bg-body {
+  background: var(--body-color);
+}
+
+/* text */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* shadow */
+.shadow-lg {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* inset */
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+/* show hide */
+.hidden {
+  display: none;
+}
+
+/* flex */
+.flex-1 {
+  -webkit-flex: 1 1;
+  flex: 1 1;
+}
+
+.flex-shrink-0 {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+/* font-size */
+.text-sm {
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+}
+
+/* padding */
+.no-padding {
+  padding: 0;
+}
+
+.no-x-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-y-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .sm\:hidden {
+    display: none !important;
+  }
+
+  .sm\:block {
+    display: block !important;
+  }
+
+  .sm\:flex {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none !important;
+  }
+  .md\:block {
+    display: block !important;
+  }
+  .md\:flex {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:hidden {
+    display: none !important;
+  }
+  .lg\:block {
+    display: block !important;
+  }
+  .lg\:flex {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:hidden {
+    display: none !important;
+  }
+  .xl\:block {
+    display: block !important;
+  }
+  .xl\:flex {
+    display: flex !important;
+  }
+}
