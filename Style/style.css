@@ -38,6 +38,10 @@ header {
   z-index: 999;
 }
 
+#menu-header__behind a {
+  letter-spacing: 0.01rem;
+}
+
 header a:hover {
   color: var(--main-color);
 }
@@ -137,6 +141,12 @@ header a:hover {
   font-size: 3.4375rem;
   line-height: 5.125rem;
   margin-bottom: 1rem;
+}
+
+#hero a {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
 }
 
 #hero a:hover {
