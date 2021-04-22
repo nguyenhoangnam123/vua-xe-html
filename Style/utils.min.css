@@ -27,6 +27,10 @@
   color: var(--white-color);
 }
 
+.c-white:hover {
+  color: var(--light-gray-color);
+}
+
 .c-body {
   color: var(--body-color);
 }
@@ -54,7 +58,7 @@
 }
 
 .bg-dark {
-  background: var(--dark-color);
+  background: var(--dark-color) !important;
 }
 
 .bg-light {

@@ -22,6 +22,11 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/Style/style.css" />
     <link rel="stylesheet" href="/Style/utils.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -31,6 +36,8 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body class="relative bg-body">
     <!-- Header -->
@@ -289,6 +296,84 @@
         </div>
       </section>
 
+      <section class="w-100" id="hop-tim-kiem">
+        <div class="container no-padding">
+          <div class="block">
+            <ul class="d-flex tab-nav">
+              <li class="tab-item active" data-id="oto">
+                <a href="javascript:void(0)" class="c-white"> Tìm ô tô </a>
+              </li>
+              <li class="tab-item" data-id="dai-ly">
+                <a href="javascript:void(0)" class="c-white"> Tìm đại lý </a>
+              </li>
+            </ul>
+          </div>
+          <div class="block bg-dark">
+            <div
+              class="d-flex flex-wrap tab-content align-items-stretch"
+              id="oto"
+            >
+              <div class="col-12 col-md-6 col-lg-3">
+                <input
+                  type="text"
+                  class="w-100"
+                  placeholder="TỪ KHÓA TÌM KIẾM"
+                />
+              </div>
+              <div class="col-6 col-lg-2">
+                <select name="select2" class="w-100 h-100" id="tinh-trang">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-6 col-lg-2">
+                <select name="select" class="w-100 h-100" id="hang-xe">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-6 col-lg-2">
+                <select name="select" class="w-100 h-100" id="dong-xe">
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <select name="select" class="w-100 h-100" id="khoang-gia">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="flex-wrap px-5 tab-content"
+              id="dai-ly"
+              style="display: none"
+            >
+              Đại lý
+            </div>
+          </div>
+          <div class="block bg-dark">
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-start"
+            >
+              <div class="col-lg-9 text-sm">
+                <h6 class="uppercase mr-2 c-light-gray font-light">
+                  Từ khóa phổ biến
+                </h6>
+                <div class="d-flex flex-wrap">
+                  <a href="#" class="c-main">Ford Ranger</a>
+                  <a href="#" class="c-main">Camry</a>
+                  <a href="#" class="c-main">Honda Jazz 2017</a>
+                  <a href="#" class="c-main">Vitara</a>
+                  <a href="#" class="c-main">Ford Ranger</a>
+                  <a href="#" class="c-main">Mazda CX5 2018</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <a href="#">Tìm kiếm xe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- footer -->
       <footer class="w-100">
         <div class="container no-padding">
@@ -418,12 +503,6 @@
   </body>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper("#hero", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="Js/home.js"></script>
 </html>
