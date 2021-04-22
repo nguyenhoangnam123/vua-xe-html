@@ -7,6 +7,8 @@
   --light-color: #f1f1f1;
   --white-color: #ffffff;
   --body-color: #e5e5e5;
+  --footer-color: #3e3e40;
+  --hr-color: #c5c8cc;
 
   --navbar-item-margin: 1.875rem;
   --navbar-item-mobile-margin: 1.25rem;
@@ -151,6 +153,17 @@ header a:hover {
 
 #hero a:hover {
   color: var(--light-color);
+}
+
+/* footer */
+footer {
+  background: var(--footer-color);
+}
+
+#menu-footer__top {
+  padding-top: 2.6875rem;
+  padding-bottom: 2.6875rem;
+  border-bottom: 1px solid var(--hr-color);
 }
 
 @media (min-width: 1200px) {

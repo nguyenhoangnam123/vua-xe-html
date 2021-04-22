@@ -115,9 +115,24 @@
 }
 
 /* font-size */
-.text-sm {
+.text-xxs {
+  font-size: 0.625rem;
+  line-height: 1.2rem;
+}
+
+.text-xs {
   font-size: 0.8125rem;
   line-height: 0.8125rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+}
+
+/* font-weight */
+.font-light {
+  font-weight: 400;
 }
 
 /* padding */
