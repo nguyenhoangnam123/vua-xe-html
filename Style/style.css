@@ -166,6 +166,10 @@ footer {
   border-bottom: 1px solid var(--hr-color);
 }
 
+#menu-footer__bottom {
+  padding-bottom: 2.375rem;
+}
+
 @media (min-width: 1200px) {
   .menu-header-behind__item {
     margin-right: var(--navbar-item-margin);
