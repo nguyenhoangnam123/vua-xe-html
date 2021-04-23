@@ -225,6 +225,10 @@ footer {
 }
 
 /* option box */
+#lua-chon {
+  margin-bottom: var(--navbar-item-margin);
+}
+
 .option-box {
   padding-left: 1.5625rem;
   height: 8.125rem;
@@ -252,6 +256,13 @@ footer {
   content: "";
   background: var(--gray-gradient);
   mix-blend-mode: overlay;
+}
+
+/* danh sach xe */
+#danh-sach-xe {
+  margin-bottom: var(--navbar-item-margin);
+  padding-top: var(--navbar-item-margin);
+  padding-bottom: var(--navbar-item-margin);
 }
 
 /* tab */
