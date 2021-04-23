@@ -93,4 +93,25 @@ $(document).ready(function () {
     data: priceRanges,
     placeholder: "KHOẢNG GIÁ",
   });
+
+  // bảng giá xe
+  $("#bang-gia-xe")
+    .not("#tat-ca-danh-sach")
+    .on("click", ".car-brand", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(".car-brand").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+      $(".popup").addClass("hidden");
+      if ($(this).hasClass("active")) {
+        // load du lieu tu ajax
+        const itemHeight = $(this).outerHeight() - 2;
+        $(this).siblings(".popup").css("top", itemHeight).removeClass("hidden");
+      } // neu co it nhat mot car brand active thi moi load du lieu
+    }); // click vao mot car-brand, toggle class active, toggle class hidden cua popup, load giu lieu cho popup qua ajax
+
+  $(window).on("click", function (e) {
+    $(".car-brand").removeClass("active");
+    $(".popup").addClass("hidden");
+  });
 });

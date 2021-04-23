@@ -413,11 +413,11 @@ footer {
   right: var(--navbar-item-mobile-margin);
 }
 
-.car-brand:last-child {
+#tat-ca-danh-sach {
   padding: var(--navbar-item-margin);
 }
 
-.car-brand:last-child a {
+#tat-ca-danh-sach a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -426,14 +426,27 @@ footer {
   line-height: 1.5rem;
 }
 
-.car-brand:last-child i {
+#tat-ca-danh-sach i {
   font-size: 2rem;
   line-height: 1.5rem;
 }
 
-.car-brand:last-child:hover a,
-.car-brand:last-child:hover i {
+#tat-ca-danh-sach:hover a,
+#tat-ca-danh-sach:hover i {
   color: var(--main-light-color);
+}
+
+.car-brand.active:not(#tat-ca-danh-sach)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--dark-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* badge */
