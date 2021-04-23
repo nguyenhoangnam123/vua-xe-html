@@ -281,26 +281,6 @@ footer {
   letter-spacing: 0.3125rem;
 }
 
-#sap-xep a:hover,
-#sap-xep a.active {
-  color: var(--white-color);
-}
-
-#sap-xep a:not(:last-child) {
-  margin-right: 2.5rem;
-}
-
-#sap-xep a.active::after {
-  position: absolute;
-  content: "";
-  width: 1rem;
-  height: 2px;
-  background-color: var(--yellow-color);
-  bottom: -7px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .section-heading {
   margin-bottom: var(--navbar-item-margin);
 }
@@ -353,7 +333,7 @@ footer {
   margin-bottom: 0.625rem;
 }
 
-.car-card .card-body .price {
+.price {
   font-size: 1.125rem;
   line-height: 1.375rem;
   margin-bottom: 1rem;
@@ -386,9 +366,16 @@ footer {
 }
 
 /* bảng giá xe */
+#bang-gia-xe {
+  margin-bottom: 3.125rem;
+}
+
 .car-brand {
-  border-right: 1px solid var(--light-gray-color);
   border-bottom: 1px solid var(--light-gray-color);
+}
+
+.car-brand:not(:last-child) {
+  border-right: 1px solid var(--light-gray-color);
 }
 
 .car-brand:hover {
@@ -445,6 +432,48 @@ footer {
   border-right: 15px solid transparent;
   border-bottom: 15px solid var(--dark-color);
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* bang xe hang xe */
+/* #list-xep-hang .swiper-button-next {
+  right: -2rem;
+} */
+
+/* order */
+.order a:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.order.inverse a:hover,
+.order.inverse a.active {
+  color: var(--white-color);
+}
+
+.order a.active::after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2px;
+  background-color: var(--yellow-color);
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.order a:hover,
+.order a.active {
+  color: var(--dark-color);
+}
+
+.order a.active::after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2px;
+  background-color: var(--yellow-color);
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -1,17 +1,40 @@
-// swiper
-var swiper = new Swiper("#hero", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 // select2
 $(document).ready(function () {
   const carStatus = $("#tinh-trang");
   const carBrand = $("#hang-xe");
   const carLine = $("#dong-xe");
   const priceRange = $("#khoang-gia");
+
+  // swiper
+  var heroSlide = new Swiper("#hero", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var topRatingCarSlide = new Swiper("#list-xep-hang", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      325: {
+        slidesPerView: 1,
+      },
+    },
+  });
 
   const statusList = [
     {
