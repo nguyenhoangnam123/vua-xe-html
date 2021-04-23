@@ -13,6 +13,7 @@
   --footer-color: #3e3e40;
   --hr-color: #c5c8cc;
   --red-color: #de1818;
+  --human-skin-color: #f7eee1;
 
   --navbar-item-margin: 1.875rem;
   --navbar-item-mobile-margin: 1.25rem;
@@ -437,9 +438,21 @@ footer {
 }
 
 /* bang xe hang xe */
-/* #list-xep-hang .swiper-button-next {
-  right: -2rem;
-} */
+#list-xep-hang {
+  margin-bottom: 2.5rem;
+}
+
+/* goc nhin chuyen gia */
+#goc-nhin-chuyen-gia {
+  padding: 2.5rem 0;
+}
+
+/* tin tuc cap nhat */
+
+/* trai nghiem cung vua xe */
+#trai-nghiem-cung-xua-xe {
+  background-color: rgba(22, 30, 41, 0.8);
+}
 
 /* order */
 .order a:not(:last-child) {

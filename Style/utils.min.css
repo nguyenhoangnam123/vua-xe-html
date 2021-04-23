@@ -93,6 +93,10 @@
   background: var(--red-color);
 }
 
+.bg-human-skin {
+  background: var(--human-skin-color);
+}
+
 /* text */
 .uppercase {
   text-transform: uppercase;
