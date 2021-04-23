@@ -408,6 +408,39 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.car-brand .badge {
+  font-size: 1rem;
+  right: var(--navbar-item-mobile-margin);
+}
+
+.car-brand:last-child {
+  padding: var(--navbar-item-margin);
+}
+
+.car-brand:last-child a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(6ch, 75%, 12ch);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.car-brand:last-child i {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
+.car-brand:last-child:hover a,
+.car-brand:last-child:hover i {
+  color: var(--main-light-color);
+}
+
+/* badge */
+.badge {
+  text-align: center;
+}
+
 /* tab */
 .tab-nav {
   margin: 0 !important;
