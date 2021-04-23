@@ -1,7 +1,10 @@
 :root {
   --main-color: #d95327;
+  --main-light-color: #e25f34;
   --yellow-color: #f0a431;
+  --yellow-light-color: #f5ad3f;
   --gray-color: #54555a;
+  --gray-light-color: #7d889a;
   --dark-color: #161e29;
   --light-gray-color: #eeeeee;
   --light-color: #f1f1f1;
@@ -13,6 +16,12 @@
   --navbar-item-margin: 1.875rem;
   --navbar-item-mobile-margin: 1.25rem;
   --main-gradient: linear-gradient(98.42deg, #d97227 0%, #c63e13 100%);
+  --gray-gradient: linear-gradient(
+    279.95deg,
+    rgba(0, 0, 0, 0.44) -20.3%,
+    rgba(255, 255, 255, 0.33) 104.99%
+  );
+
   --hero-gradient: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.68) 0%,
@@ -188,6 +197,61 @@ footer {
   margin-top: -45px;
   position: relative;
   z-index: 9;
+  margin-bottom: var(--navbar-item-margin);
+}
+
+#tu-khoa {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: var(--navbar-item-margin);
+}
+
+#tu-khoa .key-word {
+  margin-right: 1.75rem;
+  font-size: 0.875rem;
+}
+
+#tu-khoa .key-word:hover {
+  color: var(--white-color);
+}
+
+#tim-kiem {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#tim-kiem:hover {
+  color: var(--light-gray-color);
+}
+
+/* option box */
+.option-box {
+  padding-left: 1.5625rem;
+  height: 8.125rem;
+}
+
+.option-box h3 {
+  font-size: 1.6875rem;
+  line-height: 2.5rem;
+}
+
+.option-box i {
+  font-size: 2rem;
+}
+
+#uu-dai img {
+  right: 1.25rem;
+}
+
+.option-box::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  content: "";
+  background: var(--gray-gradient);
+  mix-blend-mode: overlay;
 }
 
 /* tab */

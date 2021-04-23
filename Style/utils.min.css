@@ -49,12 +49,24 @@
   background: var(--main-color);
 }
 
+.bg-main-light {
+  background: var(--main-light-color);
+}
+
 .bg-yellow {
   background: var(--yellow-color);
 }
 
+.bg-yellow-light {
+  background: var(--yellow-light-color);
+}
+
 .bg-gray {
   background: var(--gray-color);
+}
+
+.bg-gray-light {
+  background: var(--gray-light-color);
 }
 
 .bg-dark {
@@ -99,6 +111,22 @@
 /* inset */
 .inset-y-0 {
   top: 0;
+  bottom: 0;
+}
+
+.lef-0 {
+  lefft: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
   bottom: 0;
 }
 
@@ -152,6 +180,11 @@
 .no-y-padding {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+/* display */
+.block {
+  display: block;
 }
 
 @media (min-width: 576px) {
