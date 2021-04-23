@@ -9,7 +9,7 @@
   --light-gray-color: #eeeeee;
   --light-color: #f1f1f1;
   --white-color: #ffffff;
-  --body-color: #e5e5e5;
+  --body-color: #ffffff;
   --footer-color: #3e3e40;
   --hr-color: #c5c8cc;
   --red-color: #de1818;
@@ -277,7 +277,7 @@ footer {
   z-index: 1;
 }
 
-#qua-tang {
+.subtitle {
   letter-spacing: 0.3125rem;
 }
 
@@ -301,7 +301,7 @@ footer {
   transform: translateX(-50%);
 }
 
-#chon-xe-nhan-qua {
+.section-heading {
   margin-bottom: var(--navbar-item-margin);
 }
 
@@ -383,6 +383,29 @@ footer {
 
 .watch-more:hover {
   color: var(--yellow-light-color);
+}
+
+/* bảng giá xe */
+.car-brand {
+  border-right: 1px solid var(--light-gray-color);
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.car-brand:hover {
+  background-color: var(--light-gray-color);
+}
+
+.car-brand::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.car-brand svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* tab */
