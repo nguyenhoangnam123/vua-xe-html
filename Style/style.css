@@ -398,7 +398,8 @@ footer {
   border-right: 1px solid var(--light-gray-color);
 }
 
-.car-brand:hover {
+.car-brand:hover,
+.car-brand.active {
   background-color: var(--light-gray-color);
 }
 
@@ -426,6 +427,11 @@ footer {
 .car-brand .badge {
   font-size: 1rem;
   right: var(--navbar-item-mobile-margin);
+  display: none;
+}
+
+.car-brand.active .badge {
+  display: block;
 }
 
 #tat-ca-danh-sach {
