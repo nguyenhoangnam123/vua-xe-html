@@ -39,6 +39,10 @@
 
   /* home */
   --bg-car-list: #1d2c40;
+
+  /* shadow */
+  --shadow-lg: 0px 12px 25px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0px 6px 12px rgba(68, 79, 96, 0.13);
 }
 
 a {
@@ -101,6 +105,23 @@ header a:hover {
 
 .menu-header-behind__item {
   margin-right: var(--navbar-item-mobile-margin);
+}
+
+.menu-header-behind__item:hover::after {
+  display: block;
+}
+
+.submenu {
+  min-width: 900px;
+  top: calc(100%);
+  padding: 1.5rem 1.5rem 0.5rem;
+  box-shadow: var(--shadow-lg);
+  border-top: 1px solid var(--main-color);
+  display: none;
+}
+
+.menu-header-behind__item:hover .submenu {
+  display: block;
 }
 
 #menu-header-behind__hambuger {
