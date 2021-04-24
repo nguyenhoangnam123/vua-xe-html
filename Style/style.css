@@ -191,17 +191,6 @@ footer {
   padding-bottom: 2.375rem;
 }
 
-@media (min-width: 1200px) {
-  .menu-header-behind__item {
-    margin-right: var(--navbar-item-margin);
-  }
-
-  header {
-    position: fixed;
-    top: 0.6875rem;
-  }
-}
-
 /* search */
 #hop-tim-kiem {
   margin-top: -45px;
@@ -452,7 +441,36 @@ footer {
   padding: 2.5rem 0;
 }
 
-/* tin tuc cap nhat */
+/* tin-tuc-noi-bat */
+#tin-tuc-noi-bat {
+  padding: 2.5rem 0;
+  min-height: 50vh;
+}
+
+#tin-tuc-noi-bat h2 {
+  margin-bottom: var(--navbar-item-margin);
+}
+
+#list-tin a {
+  margin-bottom: var(--navbar-item-margin);
+}
+
+#list-tin a:hover {
+  color: var(--gray-color);
+}
+
+.news-item h5 {
+  margin-bottom: 1.25rem;
+}
+
+.news-item-content {
+  padding: 1.25rem;
+}
+
+.news-item-date {
+  bottom: 1.25rem;
+  letter-spacing: 0.2rem;
+}
 
 /* trai nghiem cung vua xe */
 #trai-nghiem-cung-xua-xe {
@@ -662,4 +680,21 @@ input:focus {
 .select2-dropdown {
   border-radius: 0 !important;
   letter-spacing: 0.08rem;
+}
+
+/* responsive */
+@media (min-width: 1200px) {
+  .menu-header-behind__item {
+    margin-right: var(--navbar-item-margin);
+  }
+
+  header {
+    position: fixed;
+    top: 0.6875rem;
+  }
+
+  /* tin noi bat */
+  #list-tin > a:last-child .news-item-content {
+    min-height: 16.25rem;
+  }
 }
