@@ -97,6 +97,10 @@
   background: var(--human-skin-color);
 }
 
+.bg-statistic {
+  background: var(--impressive-statisic-gradient);
+}
+
 /* text */
 .uppercase {
   text-transform: uppercase;
