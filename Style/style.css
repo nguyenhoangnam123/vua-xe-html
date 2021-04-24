@@ -447,6 +447,20 @@ footer {
   background-size: cover;
 }
 
+.special-content {
+  padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.special-content h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+#list-chuyen-gia a {
+  margin-bottom: var(--navbar-item-margin);
+}
+
 /* tin-tuc-noi-bat */
 #tin-tuc-noi-bat {
   padding: 2.5rem 0;

@@ -281,6 +281,10 @@
   grid-gap: var(--navbar-item-margin);
 }
 
+.grid-gap-0 {
+  grid-gap: 0;
+}
+
 /* font-size */
 .text-xxs {
   font-size: 0.625rem;
