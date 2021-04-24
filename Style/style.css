@@ -399,6 +399,14 @@ footer {
   background-color: var(--light-gray-color);
 }
 
+.car-brand svg:hover {
+  fill: #002d77;
+}
+
+.car-brand.active svg {
+  fill: #002d77;
+}
+
 .car-brand::after {
   content: "";
   display: block;
