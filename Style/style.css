@@ -69,6 +69,10 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+#menu-header__top .text-description:hover {
+  color: var(--yellow-color);
+}
+
 #menu-header__behind a {
   letter-spacing: 0.01rem;
 }
