@@ -456,7 +456,52 @@ footer {
 
 /* trai nghiem cung vua xe */
 #trai-nghiem-cung-xua-xe {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-image: url("/Assets/image/trai-nghiem-cung-vua-xe.jpg");
   background-color: rgba(22, 30, 41, 0.8);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.experience-item {
+  min-height: 6rem;
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--yellow-color);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.2s ease-in;
+}
+
+.experience-item:hover::after {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.experience-item > div:first-child {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.experience-item:hover > div:last-child {
+  background-color: var(--dark-color);
+}
+
+#trai-nghiem-thumb h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.25rem;
 }
 
 /* thong ke an tuong */
