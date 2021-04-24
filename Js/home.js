@@ -38,6 +38,9 @@ $(document).ready(function () {
     },
   });
 
+  // search tabs
+  $("#hop-tim-kiem").tabs();
+
   const statusList = [
     {
       id: 1,

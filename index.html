@@ -37,7 +37,11 @@
       rel="stylesheet"
     />
 
+    <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- plugins tự viết -->
+    <script src="/Js/plugin/tab.min.js"></script>
   </head>
   <body class="relative bg-body">
     <!-- Header -->
@@ -336,9 +340,9 @@
             </ul>
           </div>
           <div class="block bg-dark">
-            <div
-              class="d-flex flex-wrap tab-content align-items-stretch"
-              id="oto"
+            <div class="w-100" id="oto">
+              <div
+              class="w-100 d-flex flex-wrap tab-content align-items-stretch"
             >
               <div class="col-12 col-md-6 col-lg-3">
                 <input
@@ -368,14 +372,18 @@
                 </select>
               </div>
             </div>
+            </div>
             <div
               class="flex-wrap px-5 tab-content"
               id="dai-ly"
               style="display: none"
             >
-              Đại lý
+              <div class="c-white">
+                Đại lý
+              </div>
             </div>
           </div>
+
           <div class="block bg-dark">
             <div
               class="d-flex flex-wrap justify-content-between align-items-start"
