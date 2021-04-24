@@ -43,6 +43,9 @@
   /* shadow */
   --shadow-lg: 0px 12px 25px rgba(0, 0, 0, 0.15);
   --shadow-md: 0px 6px 12px rgba(68, 79, 96, 0.13);
+
+  /* image border radius style */
+  --image-border-radius: 0 0 0.625rem 0;
 }
 
 a {
@@ -461,9 +464,26 @@ footer {
   transform: translateX(-50%);
 }
 
+#bang-gia-xe .popup {
+  padding: 2.5rem 3.125rem;
+}
+
+#bang-gia-xe .popup h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+.price-table-image__item img {
+  border-radius: var(--image-border-radius);
+}
+
 /* bang xe hang xe */
 #list-xep-hang {
   margin-bottom: 2.5rem;
+}
+
+#list-xep-hang a:hover {
+  color: var(--gray-color);
 }
 
 /* goc nhin chuyen gia */
