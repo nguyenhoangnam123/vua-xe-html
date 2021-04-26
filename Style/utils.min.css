@@ -473,4 +473,7 @@
   .xl\:absolute {
     position: absolute;
   }
+  .xl\:text-normal {
+    font-size: 1rem;
+  }
 }
