@@ -62,6 +62,12 @@ html {
   #tin-tuc-noi-bat h2 {
     margin-bottom: var(--navbar-item-margin);
   }
+
+  /* thong ke an tuong */
+  #thong-ke-an-tuong .statistic-content img {
+    top: -25%;
+    right: 0;
+  }
 }
 
 a {
@@ -234,6 +240,10 @@ footer {
 
 #menu-footer__bottom {
   padding-bottom: 2.375rem;
+}
+
+#social-icon img {
+  width: var(--navbar-item-margin);
 }
 
 /* search */
@@ -635,6 +645,7 @@ footer {
   min-width: 12.5rem;
   background-repeat: no-repeat;
   background-position: top right;
+  padding-top: 8rem;
 }
 
 #thong-ke-an-tuong .statistic-text h2 {
@@ -643,10 +654,6 @@ footer {
 
 #thong-ke-an-tuong .statistic-content {
   padding-top: var(--navbar-item-margin);
-}
-
-#thong-ke-an-tuong .statistic-content img {
-  top: -25%;
 }
 
 /* order */

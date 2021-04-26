@@ -431,6 +431,18 @@
   .xl\:flex {
     display: flex !important;
   }
+  .xl\:justify-center {
+    justify-content: center !important;
+  }
+  .xl\:justify-between {
+    justify-content: space-between !important;
+  }
+  .xl\:justify-start {
+    justify-content: start !important;
+  }
+  .xl\:justify-end {
+    justify-content: end !important;
+  }
   .xl\:grid {
     display: grid !important;
   }
