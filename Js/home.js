@@ -123,7 +123,7 @@ $(document).ready(function () {
   });
 
   // bảng giá xe
-  $("#bang-gia-xe")
+  $("#list-logo")
     .not("#tat-ca-danh-sach")
     .on("click", ".car-brand", function (e) {
       e.preventDefault();
@@ -134,7 +134,12 @@ $(document).ready(function () {
       if ($(this).hasClass("active")) {
         // load du lieu tu ajax
         const itemHeight = $(this).outerHeight() - 2;
-        $(this).siblings(".popup").css("top", itemHeight).removeClass("hidden");
+        const rowHeight =
+          $(this).offset().top - $(e.delegateTarget).offset().top;
+        $(this)
+          .siblings(".popup")
+          .css("top", itemHeight + rowHeight)
+          .removeClass("hidden");
       } // neu co it nhat mot car brand active thi moi load du lieu
     }); // click vao mot car-brand, toggle class active, toggle class hidden cua popup, load giu lieu cho popup qua ajax
 

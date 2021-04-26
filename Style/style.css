@@ -48,6 +48,16 @@
   --image-border-radius: 0 0 0.625rem 0;
 }
 
+html {
+  font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 a {
   cursor: pointer;
 }

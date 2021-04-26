@@ -353,6 +353,31 @@
   word-break: break-word;
 }
 
+/* width */
+.fit-content {
+  width: fit-content;
+}
+
+.auto {
+  width: auto;
+}
+
+.mw-25 {
+  max-width: 25%;
+}
+
+.mw-50 {
+  max-width: 50%;
+}
+
+.mw-75 {
+  max-width: 75%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
 @media (min-width: 576px) {
   .sm\:hidden {
     display: none !important;
@@ -423,5 +448,8 @@
   }
   .xl\:no-margin {
     margin: 0 !important;
+  }
+  .xl\:fit-content {
+    width: fit-content !important;
   }
 }
