@@ -434,6 +434,9 @@
   .xl\:grid {
     display: grid !important;
   }
+  .xl\:grid-gap-base {
+    grid-gap: var(--navbar-item-margin);
+  }
   .xl\:order-1 {
     order: 1;
   }
@@ -448,6 +451,9 @@
   }
   .xl\:no-margin {
     margin: 0 !important;
+  }
+  .xl\:no-padding {
+    padding: 0 !important;
   }
   .xl\:fit-content {
     width: fit-content !important;

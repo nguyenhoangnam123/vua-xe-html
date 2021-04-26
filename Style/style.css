@@ -57,6 +57,11 @@ html {
   html {
     font-size: 16px;
   }
+
+  /* tin tuc noi bat */
+  #tin-tuc-noi-bat h2 {
+    margin-bottom: var(--navbar-item-margin);
+  }
 }
 
 a {
@@ -540,10 +545,6 @@ footer {
 #tin-tuc-noi-bat {
   padding: 2.5rem 0;
   min-height: 50vh;
-}
-
-#tin-tuc-noi-bat h2 {
-  margin-bottom: var(--navbar-item-margin);
 }
 
 #list-tin a {

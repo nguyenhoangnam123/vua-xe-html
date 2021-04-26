@@ -1665,10 +1665,10 @@
           </div>
           <div class="d-flex flex-wrap align-items-start justify-content-between section-heading">
             <h2 class="c-main flex-shrink-0 c-main">Tin tức nổi bật</h2>
-            <a href="#" class="block text-center bg-main-gradient watch-more text-description text-white">Xem thêm</a>
+            <a href="#" class="hidden xl:block text-center bg-main-gradient watch-more text-description text-white">Xem thêm</a>
           </div>
           <!-- list news -->
-          <div class="d-flex flex-wrap xl:grid grid-gap-base" id="list-tin">
+          <div class="d-flex flex-wrap xl:grid xl:grid-gap-base" id="list-tin">
             <a href="#" class="c-dark grid-col-1/3 grid-row-1 xl:no-margin">
               <div class="d-flex flex-wrap shadow-md w-100 h-100">
                 <div class="col-md-5 no-padding xl:order-2 bg-dark">
@@ -1719,7 +1719,9 @@
                 </div>
               </div>
             </a>
-            </div>
+          </div>
+          <div class="block w-100 xl:hidden">
+            <a href="#" class="w-100 py-3 block text-center bg-main-gradient watch-more text-description text-white">Xem thêm</a>
           </div>
         </div>
       </section>
@@ -1734,9 +1736,9 @@
           <div class="d-flex flex-wrap align-items-center justify-content-between section-heading">
             <h2 class="w-100 c-main flex-shrink-0 c-yellow">Trải nghiệm cùng vua xe</h2>
           </div>
-          <div class="d-flex flex-column absolute top-0 right-0">
-            <img src="/Assets/image/autozone.png" alt="autozone.png">
-            <div class="text-xxs text-white font-bold">
+          <div class="d-flex flex-column absolute top-0 right-0 align-items-end pr-4 xl:no-padding">
+            <img class="mw-50 xl:fit-content" src="/Assets/image/autozone.png" alt="autozone.png">
+            <div class="hidden xl:block text-xxs text-white font-bold">
               powered by <span class="c-yellow">vuaxe.com.vn</span></div>
           </div>
           <div class="block w-100">
