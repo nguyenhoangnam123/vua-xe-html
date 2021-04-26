@@ -115,6 +115,16 @@ header a:hover {
   right: 0;
 }
 
+#menu-header-mobile_setting {
+  right: 1rem;
+}
+
+#menu-header-mobile_setting a {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
 .menu-header-behind__item {
   margin-right: var(--navbar-item-mobile-margin);
 }

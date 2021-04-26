@@ -400,6 +400,11 @@
   max-width: 100%;
 }
 
+/* radius */
+.rounded {
+  border-radius: 50% !important;
+}
+
 @media (min-width: 576px) {
   .sm\:hidden {
     display: none !important;
