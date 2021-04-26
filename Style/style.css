@@ -351,8 +351,10 @@ footer {
   border-radius: 0 0 5px 0;
   line-height: 1rem;
   text-align: center;
-  margin-left: auto;
-  margin-right: var(--navbar-item-margin);
+  margin-left: 0;
+  margin-right: 0;
+  top: 0.5rem;
+  right: 1rem;
   letter-spacing: 0.1rem;
 }
 
@@ -796,6 +798,12 @@ input:focus {
   .option-box h3 {
     font-size: 1.6875rem;
     line-height: 2.5rem;
+  }
+
+  /* list car */
+  .gift-tag {
+    margin-left: auto;
+    margin-right: var(--navbar-item-margin);
   }
 
   /* tin tuc noi bat */
