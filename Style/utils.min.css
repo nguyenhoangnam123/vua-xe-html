@@ -328,7 +328,6 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-
 /* display */
 .block {
   display: block;
@@ -347,6 +346,11 @@
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+/* typo */
+.break-word {
+  word-break: break-word;
 }
 
 @media (min-width: 576px) {
@@ -388,6 +392,11 @@
 }
 
 @media (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .xl\:hidden {
     display: none !important;
   }

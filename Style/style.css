@@ -604,10 +604,8 @@ footer {
 
 /* thong ke an tuong */
 #thong-ke-an-tuong .col-lg-6:nth-child(2) {
-  padding-top: 2.5rem;
-  padding-left: 3.375rem;
+  padding-top: 1.25rem;
 }
-
 #thong-ke-an-tuong .text-heading {
   margin-bottom: var(--navbar-item-margin);
 }
@@ -776,5 +774,11 @@ input:focus {
   /* tin noi bat */
   #list-tin > a:last-child .news-item-content {
     min-height: 16.25rem;
+  }
+
+  /* thong ke an tuong */
+  #thong-ke-an-tuong .col-lg-6:nth-child(2) {
+    padding-top: 2.5rem;
+    padding-left: 3.375rem;
   }
 }
