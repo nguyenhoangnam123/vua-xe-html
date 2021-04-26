@@ -32,7 +32,7 @@ $(document).ready(function () {
       640: {
         slidesPerView: 2,
       },
-      325: {
+      320: {
         slidesPerView: 1.5,
       },
     },

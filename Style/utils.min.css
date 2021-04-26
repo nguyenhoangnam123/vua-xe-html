@@ -470,4 +470,7 @@
   .xl\:fit-content {
     width: fit-content !important;
   }
+  .xl\:absolute {
+    position: absolute;
+  }
 }
