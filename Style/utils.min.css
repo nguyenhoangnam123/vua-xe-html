@@ -498,4 +498,13 @@
   .xl\:text-normal {
     font-size: 1rem;
   }
+  .xl\:bg-white {
+    background-color: var(--white-color);
+  }
+  .xl\:bg-transparent {
+    background-color: transparent !important;
+  }
+  .xl\:shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
 }
