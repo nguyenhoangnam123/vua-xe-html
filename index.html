@@ -287,8 +287,8 @@
     <main>
       <section class="swiper-container" id="hero">
         <div class="swiper-wrapper">
-          <div class="swiper-slide relative">
-            <img src="/Assets/image/hero1.jpg" alt="" class="w-100" />
+          <div class="swiper-slide relative" style="background-image: url('/Assets/image/hero1.jpg')">
+            <img class="hidden xl:block w-100" src="/Assets/image/hero1.jpg" alt="" class="w-100" />
             <div
               class="container absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
             >
@@ -301,8 +301,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="/Assets/image/hero2.jpg" alt="" class="w-100" />
+          <div class="swiper-slide relative" style="background-image: url('/Assets/image/hero2.jpg')">
+            <img class="hidden xl:block w-100" src="/Assets/image/hero2.jpg" alt="" class="w-100" />
             <div
               class="container absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
             >
@@ -315,8 +315,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="/Assets/image/hero3.jpg" alt="" class="w-100" />
+          <div class="swiper-slide relative" style="background-image: url('/Assets/image/hero3.jpg')">
+            <img class="hidden xl:block w-100" src="/Assets/image/hero3.jpg" alt="" class="w-100" />
             <div
               class="container absolute w-100 h-100 mx-auto hero-slide-content c-white d-flex flex-wrap align-items-center"
             >
@@ -331,12 +331,13 @@
           </div>
         </div>
         <!-- controller -->
-        <div class="swiper-button-next hero-next">
+        <div class="hidden sm:flex swiper-button-next hero-next">
           <i class="fal fa-chevron-right"></i>
         </div>
-        <div class="swiper-button-prev hero-prev">
+        <div class="hidden sm:flex swiper-button-prev hero-prev">
           <i class="fal fa-chevron-left"></i>
         </div>
+        <div class="swiper-pagination sm:hidden"></div>
       </section>
 
       <section class="w-100" id="hop-tim-kiem">

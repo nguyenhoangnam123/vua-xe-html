@@ -151,6 +151,13 @@ header a:hover {
 }
 
 /* section hero */
+#hero .swiper-slide {
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: auto 50vh;
+  background-position: top left;
+}
+
 #hero .swiper-slide::before {
   content: "";
   display: block;
@@ -159,7 +166,7 @@ header a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--hero-gradient);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
 
@@ -191,23 +198,26 @@ header a:hover {
   display: none;
 }
 
+.swiper-pagination {
+  top: 68%;
+  left: var(--navbar-item-margin) !important;
+  width: fit-content !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--light-gray-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--yellow-color);
+}
+
 .hero-slide-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-}
-
-#hero p {
-  font-size: 1.25rem;
-  line-height: 1.35rem;
-  margin-bottom: 0;
-}
-
-#hero h1 {
-  font-size: 3.4375rem;
-  line-height: 5.125rem;
-  margin-bottom: 1rem;
+  padding: var(--navbar-item-margin);
 }
 
 #hero a {
@@ -799,6 +809,27 @@ input:focus {
     margin-right: var(--navbar-item-margin);
   }
 
+  /* hero */
+  #hero .swiper-slide::before {
+    background: var(--hero-gradient);
+  }
+
+  .hero-slide-content {
+    padding: 10px;
+  }
+
+  #hero p {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    margin-bottom: 0;
+  }
+
+  #hero h1 {
+    font-size: 3.4375rem;
+    line-height: 5.125rem;
+    margin-bottom: 1rem;
+  }
+
   /* option box */
   .option-box {
     padding-left: 1.5625rem;
@@ -841,7 +872,4 @@ input:focus {
   .subtitle {
     letter-spacing: 0.3125rem;
   }
-}
-
-@media (min-width: 1200px) {
 }
