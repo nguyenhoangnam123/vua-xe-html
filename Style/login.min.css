@@ -41,6 +41,34 @@
   border-radius: var(--navbar-item-margin);
 }
 
+/* input custom */
+input {
+  height: var(--input-modal-height);
+  line-height: var(--input-modal-height);
+  font-size: 0.8125rem;
+  text-indent: 1rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.08rem;
+}
+
+/* progress bar */
+.progress-bar {
+  border-radius: 5px;
+  height: 5px;
+  background-color: var(--light-gray-color);
+}
+
+.progress-bar::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  height: 5px;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: var(--yellow-color);
+}
+
 /* responsive */
 @media (min-width: 1200px) {
   #login {

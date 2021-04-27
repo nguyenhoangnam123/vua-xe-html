@@ -36,6 +36,7 @@
     #cc5630 100%
   );
   --input-height: 34px;
+  --input-modal-height: 45px;
   /* shadow */
   --shadow-lg: 0px 12px 25px rgba(0, 0, 0, 0.15);
   --shadow-md: 0px 6px 12px rgba(68, 79, 96, 0.13);
