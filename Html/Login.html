@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome pro 5 -->
+    <link
+      rel="stylesheet"
+      href="/Assets/font/fontawesome-pro-5.15.2-web/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Style/bootstrap.custom.css" />
+    <link rel="stylesheet" href="../Style/style.css" />
+    <link rel="stylesheet" href="../Style/utils.min.css" />
+    <link rel="stylesheet" href="../Style/login.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- plugins tự viết -->
+    <script src="/Js/plugin/tab.min.js"></script>
+  </head>
+  <body class="relative bg-body">
+    <!-- Header -->
+    <header class="w-100">
+      <nav>
+        <div class="container">
+          <!-- menu-header top -->
+          <div
+            class="hidden xl:flex flex-wrap align-items-stretch justify-content-between bg-transparent py-3"
+            id="menu-header__top"
+          >
+            <div class="block">
+              <div class="w-100">
+                <div class="d-flex flex-wrap">
+                  <a href="#">
+                    <div class="d-flex flex-wrap align-items-center mr-5">
+                      <img src="/Assets/icon/phone.svg" alt="" class="mr-1" />
+                      <div class="text-description text-xs c-white">
+                        0965131 633
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="d-flex align-items-center">
+                      <img src="/Assets/icon/dollar.svg" alt="" class="mr-1" />
+                      <div class="text-description text-xs c-white uppercase">
+                        Báo giá
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="w-100">
+                <div class="d-flex flex-wrap">
+                  <a class="col-4 no-padding" href="#">
+                    <div
+                      class="w-100 d-flex align-items-center mr-5 justify-content-end"
+                    >
+                      <img src="/Assets/icon/save.svg" alt="" class="mr-1" />
+                      <div class="text-description text-xs c-white uppercase">
+                        Xe đã lưu
+                      </div>
+                    </div>
+                  </a>
+                  <a class="col-4 no-padding" href="#">
+                    <div
+                      class="w-100 d-flex align-items-center mr-5 justify-content-end"
+                    >
+                      <div class="text-description text-xs c-white uppercase">
+                        Đăng ký
+                      </div>
+                    </div>
+                  </a>
+                  <a class="col-4 no-padding" href="#">
+                    <div
+                      class="w-100 d-flex align-items-center mr-5 justify-content-end"
+                    >
+                      <div class="text-description text-xs c-white uppercase">
+                        Đăng nhập
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end menu header top -->
+          <!-- menu header behind -->
+          <div
+            class="row xl:no-margin flex-wrap align-items-stretch justify-content-between py-3 shadow-lg bg-white relative"
+            id="menu-header__behind"
+          >
+            <div
+              class="d-flex xl:hidden align-items-center menu-header-behind__item"
+              id="menu-header-behind__hambuger"
+            >
+              <a href="#">
+                <img src="/Assets/icon/mobile-hambuger.svg" alt="" />
+              </a>
+            </div>
+            <div
+              class="relative d-flex flex-1 justify-items-start align-items-stretch"
+            >
+              <!-- mobile logo -->
+              <div class="block xl:hidden flex-shrink-0" id="mobile-logo">
+                <a href="#">
+                  <img src="/Assets/image/logo-simple.png" alt="logo" />
+                </a>
+              </div>
+              <!-- end mobile logo -->
+              <!-- desktop logo -->
+              <div class="hidden xl:block flex-shrink-0" id="logo">
+                <a href="#">
+                  <img src="/Assets/image/logo.png" alt="logo" />
+                </a>
+              </div>
+              <!-- end desktop logo -->
+              <!-- menu header large screen -->
+              <div class="hidden xl:block">
+                <div class="d-flex h-100">
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Mua bán xe</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                    <div class="absolute bg-white submenu left-0">
+                      <div class="w-100">
+                        <div class="row">
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#">Honda City</a>
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#">BMW A8</a>
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#">Mercedes GLS</a>
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#">Lexus LX570</a>
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#">Maybach S600</a>
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#"
+                              >Bugatti Chiron</a
+                            >
+                          </div>
+                          <div class="col-xl-2 mb-3">
+                            <a class="c-dark text-sm" href="#"
+                              >Bugatti Veyron</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Đánh giá xe</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Kinh nghiệm</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Tư vấn</div>
+                        <span><i class="fal fa-chevron-down"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Otowiki</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <div class="block mr-2">Tin tức</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center relative menu-header-behind__item"
+                  >
+                    <a href="#" class="c-gray text-description text-xs">
+                      <div class="d-flex align-items-center">
+                        <img src="/Assets/icon/hambuger.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute hidden xl:block inset-y-0"
+                id="menu-header-behind_setting"
+              >
+                <div class="d-flex h-100">
+                  <!-- desktop search -->
+                  <div
+                    class="d-flex relative align-items-center menu-header-behind__item justify-content-end"
+                  >
+                    <img src="/Assets/icon/search.svg" alt="" />
+                  </div>
+                  <!-- end desktop search -->
+                  <!-- postSales button -->
+                  <div
+                    class="d-flex align-items-center menu-header-behind__item justify-content-end"
+                  >
+                    <a
+                      href="#"
+                      class="bg-main-gradient c-white text-center block uppercase"
+                      id="post-sales-button"
+                    >
+                      Đăng tin
+                    </a>
+                  </div>
+                  <!-- end PostSales button -->
+                </div>
+              </div>
+              <!-- end menu header large screen -->
+              <!-- menu header small screen -->
+              <div
+                class="absolute relative h-100 xl:hidden"
+                id="menu-header-mobile_setting"
+              >
+                <div
+                  class="d-flex flex-wrap justify-content-end align-items-center h-100"
+                >
+                  <a
+                    href="#"
+                    class="block text-center c-white bg-gray rounded mr-2"
+                  >
+                    <i class="far fa-search"></i>
+                  </a>
+                  <a href="#" class="block text-center c-white bg-main rounded">
+                    <i class="far fa-user-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- end menu header small screen -->
+            </div>
+          </div>
+          <!-- menu menu header behind -->
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <section class="relative w-100" id="login"></section>
+    <!-- footer -->
+    <footer class="w-100">
+      <div class="container">
+        <!-- menu footer top -->
+        <div class="row" id="menu-footer__top">
+          <div class="col-lg-4 mb-5 xl:no-margin">
+            <div class="block mb-5">
+              <img src="/Assets/image/logo-inverse.png" alt="" />
+            </div>
+            <p class="block c-white text-sm">
+              <span
+                ><img src="/Assets/icon/address.svg" alt="" class="mr-2"
+              /></span>
+              169 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội.
+            </p>
+            <p class="block c-white text-sm">
+              <span
+                ><img src="/Assets/icon/mobile.svg" alt="" class="mr-2"
+              /></span>
+              +84 965 131 633
+            </p>
+            <p class="block c-white mb-5 text-sm">
+              <span
+                ><img src="/Assets/icon/mail.svg" alt="" class="mr-2"
+              /></span>
+              support@vuaxe.com.vn
+            </p>
+            <div class="d-flex w-100" class="xl:fit-content" id="social-icon">
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/linkelin.svg" alt="linkelin" />
+                </a>
+              </div>
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/facebook.svg" alt="facebook" />
+                </a>
+              </div>
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/insta.svg" alt="instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 col-lg-3 text-white text-sm">
+            <h5 class="mb-4">Hỗ trợ khách hàng</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Quy định, chính sách</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Điều khoản hoạt động salon</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Câu hỏi thường gặp</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Liên hệ</a>
+            </p>
+          </div>
+          <div class="w-100 col-lg-2 text-white text-sm">
+            <h5 class="mb-4">Về chúng tôi</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Giới thiệu</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Quy chế hoạt động</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Tuyển dụng</a>
+            </p>
+          </div>
+          <div class="w-100 col-lg-3 text-white text-sm">
+            <h5 class="mb-4">Tin tức bán xe</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Báo giá dịch vụ</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Khuyến mại từ các hãng</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Cải tiến & tính năng mới</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- end menu footer top -->
+        <hr />
+        <div class="row text-sm text-white" id="menu-footer__bottom">
+          <div class="col-lg-7">
+            <h6 class="mb-3">
+              &#169; 2021 vuaxe.com.vn. Bản quyền thuộc về NewgenMedia.com.vn
+            </h6>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy chứng nhận ĐKDN số 0106774081 cấp bởi Phòng ĐKKD Hà Nội ngày
+              11/02/2015
+            </p>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy phép ICP số 978/GP-TTĐT do Sở Thông tin và Truyền thông Hà
+              Nội cấp ngày 14/4/2015
+            </p>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy phép sửa đổi, bổ sung Giấy phép ICP Số 4362/GP-TTĐT do Sở
+              Thông tin và Truyền thông Hà Nội cấp ngày 20/10/2017
+            </p>
+          </div>
+          <div class="col-lg-5 float-right">
+            <img
+              src="/Assets/image/certification.png"
+              alt="Đăng ký Bộ Công Thương"
+              class="float-right"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</html>
