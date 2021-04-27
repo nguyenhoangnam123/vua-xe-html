@@ -97,6 +97,10 @@
   background: var(--human-skin-color);
 }
 
+.bg-facebook {
+  background: var(--facebook-color);
+}
+
 .bg-statistic {
   background: var(--impressive-statisic-gradient);
 }
@@ -136,6 +140,10 @@
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* shadow */

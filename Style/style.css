@@ -14,6 +14,7 @@
   --hr-color: #c5c8cc;
   --red-color: #de1818;
   --human-skin-color: #f7eee1;
+  --facebook-color: #1878f2;
 
   --navbar-item-margin: 1.875rem;
   --navbar-item-mobile-margin: 1.25rem;
@@ -251,6 +252,12 @@ input:focus {
   outline: none !important;
 }
 
+.iconic-input .icon-wrap {
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--navbar-item-mobile-margin);
+}
+
 /* select2 custom */
 .select2-selection__placeholder {
   font-size: 0.875rem;
@@ -288,6 +295,12 @@ input:focus {
 .select2-dropdown {
   border-radius: 0 !important;
   letter-spacing: 0.08rem;
+}
+
+/* forrm card */
+.form-card {
+  width: clamp(300px, 100%, 455px);
+  padding: var(--navbar-item-margin);
 }
 
 /* responsive */
