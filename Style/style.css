@@ -223,6 +223,10 @@ footer {
   line-height: 22px;
 }
 
+.tab-item:hover {
+  cursor: pointer;
+}
+
 .tab-nav .tab-item.active {
   background-color: var(--dark-color);
 }
