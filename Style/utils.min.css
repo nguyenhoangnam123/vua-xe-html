@@ -101,6 +101,34 @@
   background: var(--impressive-statisic-gradient);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-top-left {
+  background-position: top left;
+}
+
+.bg-bottom-right {
+  background-position: bottom right;
+}
+
+.bg-center-center {
+  background-position: center center;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 /* text */
 .uppercase {
   text-transform: uppercase;
