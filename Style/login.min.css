@@ -2,7 +2,12 @@
   min-height: 100vh;
 }
 
-#login::after {
+#signup {
+  min-height: 150vh;
+}
+
+#login::after,
+#signup::after {
   content: "";
   display: block;
   width: 100%;
@@ -51,6 +56,14 @@ input {
   letter-spacing: 0.08rem;
 }
 
+.icon-wrap.active .active-icon {
+  display: block !important;
+}
+
+.icon-wrap.active .inactive-icon {
+  display: none !important;
+}
+
 /* progress bar */
 .progress-bar {
   border-radius: 5px;
@@ -73,5 +86,8 @@ input {
 @media (min-width: 1200px) {
   #login {
     min-height: 80vh;
+  }
+  #signup {
+    min-height: 120vh;
   }
 }

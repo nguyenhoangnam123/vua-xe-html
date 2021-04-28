@@ -338,30 +338,39 @@
                 <label for="email" class="w-100 block mb-2 font-weight-bold"
                   >Tài khoản đăng nhập</label
                 >
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Nhập email hoặc SĐT đăng nhập"
-                  class="w-100"
-                />
+                <div class="relative w-100 input-wrapper">
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Nhập email hoặc SĐT đăng nhập"
+                    class="w-100"
+                  />
+                </div>
               </div>
-              <div class="w-100">
+              <div class="w-100 mb-3">
                 <label for="email" class="w-100 block mb-2 font-weight-bold"
                   >Mật khẩu</label
                 >
                 <div class="relative w-100 iconic-input">
                   <input
-                    type="text"
+                    type="password"
                     id="password"
                     name="password"
                     placeholder="Nhập mật khẩu"
                     class="w-100"
                   />
                   <div class="icon-wrap absolute">
-                    <i class="fal fa-eye-slash c-main"></i>
+                    <i class="fal fa-eye c-main inactive-icon"></i>
+                    <i
+                      class="fal fa-eye-slash c-main active-icon"
+                      style="display: none"
+                    ></i>
                   </div>
                 </div>
+              </div>
+              <div class="w-100 login-error c-main" style="display: none">
+                Tài khoản hoặc mật khẩu không đúng
               </div>
               <div class="my-3 d-flex w-100 justify-content-end">
                 <div href="#" class="c-main tab-item" data-id="quen-mat-khau">
@@ -421,11 +430,41 @@
               id="quen-mat-khau"
               style="display: none"
             >
-              <div class="block tab-item c-main" data-id="dang-nhap">
+              <div class="block tab-item c-main mb-3" data-id="dang-nhap">
                 <i class="fal fa-chevron-left mr-2"></i>
                 Quay lại
               </div>
-              Quên mật khẩu
+              <h2 class="text-heading mb-2 c-dark w-100">Đăng nhập</h2>
+              <div class="w-100 block text-description mb-4">
+                Vui lòng nhập thông tin tài khoản để lấy lại mật khẩu
+              </div>
+              <div class="w-100 mb-4">
+                <label for="email" class="w-100 block mb-2 font-weight-bold"
+                  >Nhập email đã đăng ký</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Nhập email đã đăng ký"
+                  class="w-100"
+                />
+              </div>
+              <div class="w-100 mb-3">
+                <a
+                  href="#"
+                  class="bg-main c-white uppercase watch-more block w-100 text-center py-3"
+                >
+                  Lấy lại mật khẩu
+                </a>
+              </div>
+              <div class="w-100">
+                <span class="text-description">
+                  Hoặc liên hệ với chúng tôi &nbsp;<span class="c-main"
+                    >1900 6035</span
+                  ></span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -558,9 +597,5 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="../Js/plugin/tab.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#form-dang-nhap").tabs();
-    });
-  </script>
+  <script src="../Js/login.min.js"></script>
 </html>
