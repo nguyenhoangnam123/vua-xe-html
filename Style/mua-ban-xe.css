@@ -105,6 +105,19 @@
   background: var(--yellow-color) !important;
 }
 
+/* vì sao lựa chọn vuaxe */
+#ly-do-lua-chon {
+  margin-bottom: var(--navbar-item-margin);
+}
+.reason-header {
+  margin-bottom: var(--navbar-item-margin);
+}
+
+.reason-body p {
+  width: clamp(42ch, 100%, 75ch);
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 1200px) {
   .gift-tag {
     margin-left: 5rem;
