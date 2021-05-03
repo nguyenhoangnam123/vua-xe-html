@@ -90,6 +90,15 @@
   letter-spacing: 0.215rem;
 }
 
+.watch-more {
+  padding: 0.5rem 5rem;
+  border: 1px solid var(--main-color);
+}
+
+.watch-more:hover {
+  color: var(--yellow-light-color);
+}
+
 /* từ khóa được tìm kiếm nhiều */
 .brand-tag:hover {
   color: var(--white-color);
