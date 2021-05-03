@@ -146,6 +146,29 @@ header a:hover {
   margin-left: var(--navbar-item-mobile-margin);
 }
 
+/* header static: áp dụng cho các trang header màu trắng độ rộng full màn, không có bg */
+header.static {
+  position: relative;
+  top: 0;
+  /* display: flow-root; */
+}
+
+header.static > nav > div.w-100:first-child {
+  background-color: var(--dark-color);
+}
+
+header.static > nav > div.w-100:last-child {
+  box-shadow: var(--shadow-lg);
+}
+
+header.static #menu-header__behind {
+  box-shadow: none;
+}
+
+header.static #logo {
+  margin-left: 0;
+}
+
 /* footer */
 footer {
   background: var(--footer-color);
