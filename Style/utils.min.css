@@ -133,6 +133,15 @@
   background-attachment: fixed;
 }
 
+/* border */
+.border-1 {
+  border-width: 1px;
+}
+
+.border-light-gray {
+  border-color: var(--light-gray-color);
+}
+
 /* text */
 .uppercase {
   text-transform: uppercase;
@@ -351,6 +360,11 @@
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.4rem;
+}
+
+.text-normal {
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 /* font-weight */

@@ -158,7 +158,7 @@ header.static > nav > div.w-100:first-child {
 }
 
 header.static > nav > div.w-100:last-child {
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 
 header.static #menu-header__behind {
