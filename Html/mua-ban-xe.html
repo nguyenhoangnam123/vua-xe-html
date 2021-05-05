@@ -18,6 +18,11 @@
       rel="stylesheet"
       href="/Assets/font/fontawesome-pro-5.15.2-web/css/all.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- select2 -->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
@@ -831,8 +836,9 @@
               <!-- hết vì sao -->
             </div>
             <!-- cột bên phải -->
-            <div class="col-lg-4">
-              <div id="w-100 loc-san-pham pb-base">
+            <div class="col-lg-4 xl:pl-5">
+              <!-- lọc sản phẩm -->
+              <div class="w-100" id="loc-san-pham">
                 <div
                   class="side-column-header py-2 bg-main-gradient text-heading c-white pl-4"
                 >
@@ -872,7 +878,7 @@
                       Tình trạng xe
                     </label>
                     <div class="row">
-                      <div class="col-xl-6 pb-3">
+                      <div class="col-6">
                         <input
                           class="hidden radio"
                           type="radio"
@@ -883,12 +889,13 @@
                           >Mới
                         </label>
                       </div>
-                      <div class="col-xl-6 pb-3">
+                      <div class="col-6">
                         <input
                           class="hidden radio"
                           type="radio"
                           name="status"
                           id="old"
+                          checked
                         />
                         <label for="old" class="text-sm radio-label"
                           >Đã qua sử dụng</label
@@ -896,8 +903,323 @@
                       </div>
                     </div>
                   </div>
+                  <div class="form-group no-margin">
+                    <label
+                      class="uppercase c-main text-description no-margin side-column-content__label"
+                    >
+                      Tình trạng xe
+                    </label>
+                    <div class="row">
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="gia-tot"
+                        />
+                        <label for="gia-tot" class="text-sm checkbox-label"
+                          >Giá tốt
+                        </label>
+                      </div>
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="co-video"
+                        />
+                        <label for="co-video" class="text-sm checkbox-label"
+                          >Có video</label
+                        >
+                      </div>
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="co-anh"
+                        />
+                        <label for="co-anh" class="text-sm checkbox-label"
+                          >Có ảnh</label
+                        >
+                      </div>
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="khuyen-mai"
+                        />
+                        <label for="khuyen-mai" class="text-sm checkbox-label"
+                          >Khuyến mãi</label
+                        >
+                      </div>
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="lai-thu"
+                        />
+                        <label for="khuyen-mai" class="text-sm checkbox-label"
+                          >Lái thử</label
+                        >
+                      </div>
+                      <div class="col-6 pb-1">
+                        <input
+                          class="hidden checkbox"
+                          type="checkbox"
+                          id="co-qua-tang"
+                        />
+                        <label for="khuyen-mai" class="text-sm checkbox-label"
+                          >Có quà tặng</label
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- hết lọc sản phẩm -->
+              <!-- bán oto theo hãng -->
+              <div class="w-100" id="ban-oto-theo-hang">
+                <div
+                  class="side-column-header py-2 bg-main-gradient text-heading c-white pl-4"
+                >
+                  Bán ôtô theo hãng
+                </div>
+                <div class="side-column-content bg-white pt-4 pb-base">
+                  <div class="no-margin pb-base">
+                    <div class="d-flex flex-wrap w-100">
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          Toyota <span class="c-main">(6509)</span>
+                        </a>
+                      </div>
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          Daewoo <span class="c-main">(761)</span>
+                        </a>
+                      </div>
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          Kia <span class="c-main">(3657)</span>
+                        </a>
+                      </div>
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          BMW <span class="c-main">(486)</span>
+                        </a>
+                      </div>
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          Huyndai <span class="c-main">(3594)</span>
+                        </a>
+                      </div>
+                      <div class="col-6 no-padding car-sale-brand">
+                        <a
+                          href="#"
+                          class="text-description font-light c-dark w-100 py-4 text-sm block"
+                        >
+                          Lexus <span class="c-main">(484)</span>
+                        </a>
+                      </div>
+                      <div class="col-12 no-padding pt-base">
+                        <a
+                          href="#"
+                          class="w-100 watch-more c-main block text-center uppercase text-description"
+                          >Xem thêm &nbsp;
+                          <i class="text-sm fal fa-chevron-down"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hết bán oto theo hãng -->
+              <!-- phiên bản oto nổi bật -->
+              <div class="w-100" id="phien-ban-oto-noi-bat">
+                <div
+                  class="side-column-header py-2 bg-main-gradient text-heading c-white pl-4"
+                >
+                  Phiên bản ôtô nổi bật
+                </div>
+                <div class="side-column-content bg-white pt-4 pb-base">
+                  <div class="row w-100">
+                    <div class="col-12 car-sale-line">
+                      <a
+                        href="#"
+                        class="c-dark text-description py-4 block text-sm"
+                        >Toyota Vios MT</a
+                      >
+                    </div>
+                    <div class="col-12 car-sale-line">
+                      <a
+                        href="#"
+                        class="c-dark text-description py-4 block text-sm"
+                        >Mua xe Mazda3</a
+                      >
+                    </div>
+                    <div class="col-12 car-sale-line">
+                      <a
+                        href="#"
+                        class="c-dark text-description py-4 block text-sm"
+                        >Bán xe Mazda CX5</a
+                      >
+                    </div>
+                    <div class="col-12 car-sale-line">
+                      <a
+                        href="#"
+                        class="c-dark text-description py-4 block text-sm"
+                        >Bán xe Kia Cerato</a
+                      >
+                    </div>
+                    <div class="col-12 car-sale-line">
+                      <a
+                        href="#"
+                        class="c-dark text-description py-4 block text-sm"
+                        >Mua xe Kia Morning</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hết phiên bản oto nổi bật -->
+              <!-- salon nổi bật -->
+              <div class="w-100" id="phien-ban-oto-noi-bat">
+                <div
+                  class="side-column-header py-2 bg-main-gradient text-heading c-white pl-4"
+                >
+                  Salon nổi bật
+                </div>
+                <div class="side-column-content bg-white pt-4 pb-base">
+                  <div class="swiper-container relative" id="salon">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide relative salon-thumb">
+                        <div
+                          class="w-100 h-100 bg-cover bg-no-repeat"
+                          style="
+                            background-image: url('../Assets/image/salon-1.jpg');
+                          "
+                        >
+                          <div class="absolute salon-content">
+                            <a href="#" class="c-white">
+                              <h5 class="text-description">Lĩnh Nam Auto</h5>
+                              <div
+                                class="c-light-gray text-description font-light"
+                              >
+                                Lĩnh Nam Auto là nơi để trao đổi mua bán xe Ô Tô
+                                Đã qua sử du...
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative salon-thumb">
+                        <div
+                          class="w-100 h-100 bg-cover bg-no-repeat"
+                          style="
+                            background-image: url('../Assets/image/salon-2.jpg');
+                          "
+                        >
+                          <div class="absolute salon-content">
+                            <a href="#" class="c-white">
+                              <h5 class="text-description">Lĩnh Nam Auto</h5>
+                              <div
+                                class="c-light-gray text-description font-light"
+                              >
+                                Lĩnh Nam Auto là nơi để trao đổi mua bán xe Ô Tô
+                                Đã qua sử du...
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative salon-thumb">
+                        <div
+                          class="w-100 h-100 bg-cover bg-no-repeat"
+                          style="
+                            background-image: url('../Assets/image/salon-3.jpg');
+                          "
+                        >
+                          <div class="absolute salon-content">
+                            <a href="#" class="c-white">
+                              <h5 class="text-description">Lĩnh Nam Auto</h5>
+                              <div
+                                class="c-light-gray text-description font-light"
+                              >
+                                Lĩnh Nam Auto là nơi để trao đổi mua bán xe Ô Tô
+                                Đã qua sử du...
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative salon-thumb">
+                        <div
+                          class="w-100 h-100 bg-cover bg-no-repeat"
+                          style="
+                            background-image: url('../Assets/image/salon-4.jpg');
+                          "
+                        >
+                          <div class="absolute salon-content">
+                            <a href="#" class="c-white">
+                              <h5 class="text-description">Lĩnh Nam Auto</h5>
+                              <div
+                                class="c-light-gray text-description font-light"
+                              >
+                                Lĩnh Nam Auto là nơi để trao đổi mua bán xe Ô Tô
+                                Đã qua sử du...
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-container relative bg-dark"
+                    id="salon-control"
+                  >
+                    <div class="swiper-wrapper">
+                      <div
+                        class="swiper-slide bg-cover bg-no-repeat"
+                        style="
+                          background-image: url('../Assets/image/salon-1.jpg');
+                        "
+                      ></div>
+                      <div
+                        class="swiper-slide bg-cover bg-no-repeat"
+                        style="
+                          background-image: url('../Assets/image/salon-2.jpg');
+                        "
+                      ></div>
+                      <div
+                        class="swiper-slide bg-cover bg-no-repeat"
+                        style="
+                          background-image: url('../Assets/image/salon-3.jpg');
+                        "
+                      ></div>
+                      <div
+                        class="swiper-slide bg-cover bg-no-repeat"
+                        style="
+                          background-image: url('../Assets/image/salon-4.jpg');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hêt salon nổi bật -->
             </div>
             <!-- hết cột bên phải -->
           </div>
@@ -1030,6 +1352,7 @@
       <!-- end footer -->
     </main>
   </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

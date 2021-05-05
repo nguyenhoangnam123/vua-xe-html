@@ -593,6 +593,9 @@
   .xl\:shadow-lg {
     box-shadow: var(--shadow-lg);
   }
+  .xl\:pl-5 {
+    padding-left: 3rem;
+  }
 
   /* padding */
   .p-base {

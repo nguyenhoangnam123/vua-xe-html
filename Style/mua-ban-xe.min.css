@@ -131,7 +131,7 @@
   letter-spacing: 0.12em;
   font-size: 0.75rem;
   font-weight: 500;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 /* radio */
@@ -155,13 +155,114 @@ label.radio-label::before {
 }
 
 input[type="radio"]:checked ~ label::before {
-  content: "\e90d";
+  content: "\f00c";
   border-color: var(--main-color);
   background-color: var(--main-color);
   color: var(--white-color);
-  font-family: "icomoon" !important;
+  font-family: "Font Awesome 5 Pro" !important;
   text-align: center;
-  line-height: 100%;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* checkbox */
+label.checkbox-label {
+  margin-left: var(--navbar-item-margin);
+  position: relative;
+}
+
+label.checkbox-label::before {
+  --dark-color: #323338;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  border-radius: 2px;
+  border: 1px solid var(--dark-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.875rem;
+}
+
+input[type="checkbox"]:checked ~ label::before {
+  content: "\f00c";
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-family: "Font Awesome 5 Pro" !important;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* bán ô tô theo hãng */
+.car-sale-brand:nth-last-child(n + 4) {
+  --gray-color: #f3f3f3;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.car-sale-brand a:hover {
+  color: var(--dark-color);
+}
+
+/* phiên bản oto nổi bật */
+.car-sale-line:nth-last-child(n + 2) {
+  --gray-color: #f3f3f3;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+/* salon nổi bật */
+.salon-thumb {
+  height: 15rem;
+}
+
+.salon-thumb::after {
+  --gray-gradient: 180deg, rgba(22, 30, 41, 0) 0%, #161e29 100%;
+  content: "";
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(var(--gray-gradient));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.salon-content {
+  left: 0;
+  bottom: 0;
+  padding: 1.25rem 0.75rem;
+  z-index: 3;
+}
+
+.salon-content > a h5 {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.salon-content > a div.text-description {
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  width: clamp(25ch, 90%, 36ch);
+}
+
+#salon-control {
+  padding: 1rem 1.25rem 2rem;
+  height: 6.25rem;
+}
+
+#salon-control .swiper-slide {
+  margin-right: 0.5rem;
+  max-width: 3.5rem;
+  height: 3.5rem;
+}
+
+#salon-control .swiper-slide:last-child {
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 1200px) {
