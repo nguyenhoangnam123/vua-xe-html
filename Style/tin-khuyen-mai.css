@@ -1,0 +1,43 @@
+#danh-muc-hero {
+  min-height: 30rem;
+}
+
+#danh-muc-hero::after {
+  --dark-color: rgba(22, 30, 41, 0.77);
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--dark-color);
+  backdrop-filter: blur(11px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#danh-muc-hero > .container {
+  z-index: 1;
+  position: relative;
+  padding-top: 2.25rem;
+  padding-bottom: 2.625rem;
+}
+
+.hero-news-item > div {
+  --main-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 10.22%,
+    #000000 56.08%
+  );
+  background: var(--main-gradient);
+  opacity: 0.8;
+}
+
+.hero-news-item .text-heading {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.hero-news-item.thumb .text-heading {
+  font-weight: 500;
+  font-size: 1.5rem;
+}

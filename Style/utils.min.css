@@ -597,6 +597,15 @@
     padding-left: 3rem;
   }
 
+  .xl\:w-100 {
+    width: 100% !important;
+  }
+
+  .xl\:flex-1 {
+    flex: 0 0 100% !important;
+    max-width: 100%;
+  }
+
   /* padding */
   .p-base {
     padding: var(--navbar-item-margin);
