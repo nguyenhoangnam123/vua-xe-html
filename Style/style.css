@@ -331,6 +331,32 @@ input:focus {
   padding: var(--navbar-item-margin);
 }
 
+/* pagination */
+.pagination-item {
+  color: var(--dark-color);
+}
+.pagination-item.active {
+  color: var(--main-color);
+}
+.pagination-item:hover {
+  color: var(--gray-color);
+}
+.pagination-item:not(:first-child)::after {
+  content: "";
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pagination-item:not(:first-child) {
+  padding-left: var(--navbar-item-margin);
+}
+
 /* responsive */
 @media (min-width: 1200px) {
   html {

@@ -117,3 +117,189 @@
 .consul-form input {
   margin-bottom: 1.25rem;
 }
+
+/* chi tiết tin */
+.news-header {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-bottom: 0;
+}
+.news-setting {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.news-setting-key-word::after {
+  content: "";
+  width: 0.125rem;
+  height: 0.125rem;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news-social-button {
+  border-radius: 0.25rem;
+  padding-top: 0.0625rem;
+  padding-bottom: 0.0625rem;
+  margin-right: 0.5rem;
+}
+.news-social-button:last-child {
+  margin-right: 0;
+}
+/* cấu hình riêng cho tin */
+.news-content > img {
+  width: 100% !important;
+}
+.news-content > h1 {
+  font-size: 2rem;
+  line-height: 3.6rem;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 0;
+}
+.news-content > p {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: clamp(42ch, 100%, 75ch);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+/* tag */
+.news-tags {
+  padding-right: 2rem;
+}
+
+.news-tag {
+  --light-gray-color: #c5c8cc;
+  border: 1px solid var(--light-gray-color);
+  margin-right: 0.5rem;
+}
+
+.news-tag.active {
+  --light-gray-color: #c5c8cc;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.news-author {
+  font-size: 1.125rem;
+}
+
+.news-divider {
+  margin-top: 3.75rem;
+  margin-bottom: 2rem;
+}
+
+/* xe cùng loại */
+.price-tag {
+  top: 0.75rem;
+  right: -0.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.price-tag > div {
+  padding: 0.375rem 0.675rem;
+}
+
+.price-tag > div::after {
+  --red-color: #7a1414;
+  content: "";
+  position: absolute;
+  border-top: 0.25rem solid var(--red-color);
+  border-right: 0.25rem solid transparent;
+  bottom: -0.25rem;
+  right: 0;
+}
+
+.gift-bar {
+  bottom: 0.625rem;
+  left: 0.75rem;
+  z-index: 1;
+}
+
+.gift-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  margin-right: 0.3125rem;
+}
+
+.gift-box img {
+  width: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gift-tag {
+  width: 2.4375rem;
+  height: 1rem;
+  border-radius: 0 0 5px 0;
+  line-height: 1rem;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  top: 0.5rem;
+  right: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.car-sale-item > .col-xs-4::after {
+  --car-sale-item-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.69) 100%
+  );
+  content: "";
+  background: var(--car-sale-item-gradient);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+}
+
+.car-sale-item > .col-md-8 {
+  border: 1px solid var(--light-gray-color);
+}
+
+.car-sale-item .car-sale-content__wrapper {
+  padding: 0.75rem 1.25rem;
+}
+
+.car-sale-content__header i {
+  --gray-color: #a2a5aa;
+  color: var(--gray-color);
+  font-size: 1.5rem;
+}
+
+.car-sale-button__group i {
+  font-size: 1.2rem;
+}
+
+.car-sale-item .save-group {
+  right: 1rem;
+  z-index: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0px 0px 5px 0px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+  .gift-tag {
+    margin-left: 3rem;
+  }
+  /* subtitle */
+  .subtitle {
+    letter-spacing: 0.3125rem;
+  }
+}
