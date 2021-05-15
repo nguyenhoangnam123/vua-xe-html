@@ -1,19 +1,26 @@
 /* input custom  */
 input {
+  --light-gray-color: #c5c8cc;
   height: var(--input-modal-height);
   line-height: var(--input-modal-height);
   text-indent: 1rem;
   font-size: 0.875rem;
   letter-spacing: 0.08rem;
+  border: none;
+  border: 1px solid var(--light-gray-color);
+  outline: none !important;
 }
 
 /* custom select2 */
 .select2-container .select2-selection {
+  --light-gray-color: #c5c8cc;
   height: var(--input-modal-height) !important;
   line-height: var(--input-modal-height) !important;
   text-indent: 1rem;
   font-size: 0.875rem;
   letter-spacing: 0.08rem;
+  border: none;
+  border: 1px solid var(--light-gray-color);
 }
 
 .select2-container .select2-selection--single,
@@ -24,6 +31,18 @@ input {
   border-radius: 0 !important;
   letter-spacing: 0.08rem;
   text-indent: 1rem;
+}
+
+.select2-result {
+  display: flex;
+  align-items: center;
+}
+
+.select2-result__color {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.125rem;
 }
 
 #form-dang-tin {
@@ -103,6 +122,11 @@ input {
   color: var(--main-color);
 }
 
+.steps ul li.done {
+  --human-skin-color: #fdfbf8;
+  background: var(--human-skin-color);
+}
+
 .steps ul li.current {
   background: var(--main-color);
 }
@@ -126,8 +150,10 @@ input {
   border-bottom: 1px solid var(--gray-color);
 }
 label.image-uploader {
+  --human-skin-color: #fdfbf8;
   border: 1px dashed var(--main-color);
   padding: var(--navbar-item-margin) calc(2 * var(--navbar-item-margin));
+  background-color: var(--human-skin-color);
   margin-bottom: 0;
 }
 
@@ -162,6 +188,17 @@ label.image-uploader p {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.form-group-title {
+  font-size: 0.75rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+}
+
+#thong-so-ky-thuat label {
+  font-size: 0.875rem;
 }
 
 /* footer button */

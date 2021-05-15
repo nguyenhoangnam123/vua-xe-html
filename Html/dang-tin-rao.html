@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -766,7 +766,316 @@
               </div>
             </h4>
             <section>
-              <div class="w-block w-100">Thông số kỹ thuật</div>
+              <div class="content-body w-100" id="thong-so-ky-thuat">
+                <div class="row w-100 justify-content-start">
+                  <div class="col-xl-9">
+                    <!-- hãng xe và dòng xe -->
+                    <div class="row">
+                      <div class="w-100 col-12">
+                        <h5
+                          class="
+                            uppercase
+                            font-bold
+                            c-main
+                            mb-1
+                            w-1oo
+                            form-group-title
+                            text-description
+                          "
+                        >
+                          Thông tin xe
+                        </h5>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="hang-xe"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Hãng xe</div>
+                        </label>
+                        <select name="brand" id="hang-xe" class="w-100 h-100">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="dong-xe"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Dòng xe</div>
+                        </label>
+                        <select name="line" id="dong-xe" class="w-100 h-100">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- hết hãng xe và dòng xe -->
+                    <!-- Thông số kỹ thuật -->
+                    <div class="row">
+                      <div class="w-100 col-12">
+                        <h5
+                          class="
+                            uppercase
+                            font-bold
+                            c-main
+                            mb-1
+                            w-1oo
+                            form-group-title
+                            text-description
+                          "
+                        >
+                          Thông số kỹ thuật
+                        </h5>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="nhien-lieu"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Loại nhiên liệu</div>
+                        </label>
+                        <select
+                          name="fuel-type"
+                          id="nhien-lieu"
+                          class="w-100 h-100"
+                        >
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-8 pb-3">
+                        <label
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Loại hộp số</div>
+                        </label>
+                        <div class="block">
+                          <div class="inline-block">
+                            <input
+                              class="hidden radio"
+                              type="radio"
+                              name="status"
+                              id="new"
+                            />
+                            <label for="new" class="text-sm radio-label"
+                              >Tự động
+                            </label>
+                          </div>
+                          <div class="inline-block">
+                            <input
+                              class="hidden radio"
+                              type="radio"
+                              name="status"
+                              id="new"
+                            />
+                            <label for="new" class="text-sm radio-label"
+                              >Sàn
+                            </label>
+                          </div>
+                          <div class="inline-block">
+                            <input
+                              class="hidden radio"
+                              type="radio"
+                              name="status"
+                              id="new"
+                            />
+                            <label for="new" class="text-sm radio-label"
+                              >Hỗn hợp
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- hết thông số kỹ thuật -->
+                    <!-- màu sắc và kiểu dáng -->
+                    <div class="row">
+                      <div class="w-100 col-12">
+                        <h5
+                          class="
+                            uppercase
+                            font-bold
+                            c-main
+                            mb-1
+                            w-1oo
+                            form-group-title
+                            text-description
+                          "
+                        >
+                          Màu sắc và kiểu dáng
+                        </h5>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="ngoai-that"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Màu ngoại thất</div>
+                        </label>
+                        <select
+                          name="exterior-color"
+                          id="ngoai-that"
+                          class="w-100 h-100"
+                        >
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="noi-that"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Màu nội thất</div>
+                        </label>
+                        <select
+                          name="interior-color"
+                          id="noi-that"
+                          class="w-100 h-100"
+                        >
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="so-ghe"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Số ghế</div>
+                        </label>
+                        <select
+                          name="seat-number"
+                          id="so-ghe"
+                          class="w-100 h-100"
+                        >
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="so-cua"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Số cửa</div>
+                        </label>
+                        <select
+                          name="door-number"
+                          id="so-cua"
+                          class="w-100 h-100"
+                        >
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- hết màu sắc và kiểu dáng -->
+                  </div>
+                </div>
+              </div>
+              <div class="content-footer w-100">
+                <div class="w-100 d-flex flex-wrap justify-content-between">
+                  <a
+                    href="#"
+                    class="block form-footer-button text-description"
+                    id="luu-tin"
+                  >
+                    <span class="mr-2">
+                      <i class="fal fa-save"></i>
+                    </span>
+                    <span class="uppercase">Lưu thay đổi</span>
+                  </a>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        mr-2
+                        text-description
+                      "
+                      id="quay-lai"
+                    >
+                      <span class="uppercase">Quay lại</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        text-description
+                      "
+                      id="tiep-theo"
+                    >
+                      <span class="uppercase mr-2">Tiếp theo</span>
+                      <span>
+                        <i class="fal fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <h4 class="block w-100">
@@ -785,7 +1094,51 @@
               </div>
             </h4>
             <section>
-              <div class="w-block w-100">Loại gói tin</div>
+              <div class="content-body w-100"></div>
+              <div class="content-footer w-100">
+                <div class="w-100 d-flex flex-wrap justify-content-between">
+                  <a
+                    href="#"
+                    class="block form-footer-button text-description"
+                    id="luu-tin"
+                  >
+                    <span class="mr-2">
+                      <i class="fal fa-save"></i>
+                    </span>
+                    <span class="uppercase">Lưu thay đổi</span>
+                  </a>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        mr-2
+                        text-description
+                      "
+                      id="quay-lai"
+                    >
+                      <span class="uppercase">Quay lại</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        text-description
+                      "
+                      id="tiep-theo"
+                    >
+                      <span class="uppercase mr-2">Tiếp theo</span>
+                      <span>
+                        <i class="fal fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
