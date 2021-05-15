@@ -39,6 +39,22 @@
   color: var(--red-color);
 }
 
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-sky-blue {
+  color: var(--sky-blue-color);
+}
+
+.c-indigo {
+  color: var(--indigo-color);
+}
+
 /* background */
 .bg-transparent {
   background: transparent;
