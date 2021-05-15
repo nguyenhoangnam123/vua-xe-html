@@ -415,7 +415,7 @@
       </nav>
     </header>
     <!-- End Header -->
-    <main>
+    <main class="main-admin">
       <!-- banner -->
       <section class="w-100 d-flex banner py-base">
         <div class="container">
@@ -431,10 +431,10 @@
       <section class="w-100 d-flex pb-base">
         <div class="container">
           <div class="row">
-            <div class="col-8">
+            <div class="col-xl-8">
               <h1>Đăng tin bán xe</h1>
             </div>
-            <div class="col-4">
+            <div class="col-xl-4">
               <div class="d-flex align-items-center h-100">
                 <a href="/" class="uppercase c-main text-heading font-light"
                   ><span class="mr-3">Về trang chủ</span>
@@ -464,7 +464,291 @@
                 </div>
               </div>
             </h4>
-            <section>Thông tin cơ bản</section>
+            <section>
+              <div class="content-body w-100">
+                <div class="w-100 block" id="up-anh">
+                  <label
+                    for="image"
+                    class="image-uploader block text-center c-main"
+                  >
+                    <i class="fal fa-image-polaroid"></i>
+                    <h4 class="text-description">Tải lên hình ảnh</h4>
+                    <p class="text-description font-light upercase c-dark">
+                      JPG, JPEG & PNG
+                    </p>
+                  </label>
+                  <input
+                    type="file"
+                    class="hidden"
+                    multiple
+                    id="image"
+                    name="image"
+                  />
+                  <div class="w-100 image-uploader-description">
+                    <ul class="w-100 no-margin text-description font-light">
+                      <li>Đăng ít nhất 03 hình để tin rao hiệu quả hơn.</li>
+                      <li>Ảnh đầu tiên sẽ là ảnh đại diện cho tin của bạn.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row w-100 justify-content-start pt-4 pb-3">
+                  <div class="col-xl-9">
+                    <!-- tiêu đề và video -->
+                    <div class="row">
+                      <div class="col-xl-7 pb-3">
+                        <label
+                          for="title"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Tiêu đề *</div>
+                          <div class="c-main">0/250</div>
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Tiêu đề ngắn gọn, đầy đủ thông tin"
+                          name="title"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="col-xl-5 pb-3">
+                        <label
+                          for="video"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Video</div>
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Link video từ Youtube hoặc Facebook"
+                          name="video"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                    <!-- hết tiêu đề và video -->
+                    <!-- Mô tả -->
+                    <div class="row">
+                      <div class="col-xl-12 pb-3">
+                        <label
+                          for="description"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Nội dung mô tả *</div>
+                        </label>
+                        <textarea
+                          class="w-100"
+                          id="editor"
+                          name="description"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!-- hết mô tả -->
+                    <!-- hãng xe, tỉnh, thành phố -->
+                    <div class="row">
+                      <!-- tên xe -->
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="name"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Tên xe</div>
+                        </label>
+                        <div class="relative input-wrapper iconic-input">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Chọn tên xe"
+                            class="w-100"
+                          />
+                          <div
+                            class="
+                              icon-wrap
+                              absolute
+                              d-flex
+                              h-100
+                              align-items-center
+                            "
+                          >
+                            <i class="fal fa-search c-main"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- hết tên xe -->
+                      <!-- giá bán -->
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="price"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Giá bán *</div>
+                        </label>
+                        <input
+                          type="text"
+                          name="price"
+                          placeholder="Nhập giá bán (triệu VNĐ)"
+                          class="w-100"
+                        />
+                      </div>
+                      <!-- hết giá bán -->
+                      <!-- tỉnh thành phố -->
+                      <div class="col-xl-4 pb-3">
+                        <label
+                          for="price"
+                          class="
+                            title
+                            w-100
+                            d-flex
+                            flex-wrap
+                            w-100
+                            justify-content-between
+                            text-description text-sm
+                          "
+                        >
+                          <div class="font-bold">Tỉnh/Thành phố *</div>
+                        </label>
+                        <select
+                          name="province"
+                          id="tinh-thanh"
+                          class="w-100 h-100"
+                        >
+                          <option></option>
+                        </select>
+                      </div>
+                      <!-- tỉnh thành phố -->
+                    </div>
+                    <!-- hết hãng xe, tỉnh, thành phố -->
+                    <!-- trạng thái hiển thị, hỗ trợ lái thử -->
+                    <div class="row align-items-stretch justify-content-start">
+                      <div class="col-xl-4 pb-3">
+                        <div
+                          class="
+                            d-flex
+                            flex-wrap
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <label for="isActive" class="no-margin font-bold"
+                            >Trạng thái hiển thị</label
+                          >
+                          <input
+                            type="checkbox"
+                            name="isActive"
+                            class="lcs_check"
+                            autocomplete="off"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-4 pb-3">
+                        <div
+                          class="
+                            d-flex
+                            flex-wrap
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <label for="isActive" class="no-margin font-bold"
+                            >Hỗ trợ lái thử</label
+                          >
+                          <input
+                            type="checkbox"
+                            name="isActive"
+                            class="lcs_check"
+                            autocomplete="off"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- hết trạng thái hiển thị hỗ trợ lái thử -->
+                  </div>
+                </div>
+              </div>
+              <div class="content-footer w-100">
+                <div class="w-100 d-flex flex-wrap justify-content-between">
+                  <a
+                    href="#"
+                    class="block form-footer-button text-description"
+                    id="luu-tin"
+                  >
+                    <span class="mr-2">
+                      <i class="fal fa-save"></i>
+                    </span>
+                    <span class="uppercase">Lưu thay đổi</span>
+                  </a>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        mr-2
+                        text-description
+                      "
+                      id="quay-lai"
+                    >
+                      <span class="uppercase">Quay lại</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="
+                        block
+                        form-footer-button
+                        step-control
+                        text-description
+                      "
+                      id="tiep-theo"
+                    >
+                      <span class="uppercase mr-2">Tiếp theo</span>
+                      <span>
+                        <i class="fal fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             <h4 class="block w-100">
               <div class="d-flex flex-wrap align-items-start">
@@ -477,11 +761,13 @@
                   </div>
                 </div>
                 <div class="w-25 text-right step-icon">
-                  <i class="fal fa-cogs"></i>
+                  <i class="fal fa-cog"></i>
                 </div>
               </div>
             </h4>
-            <section>Thông số kỹ thuật</section>
+            <section>
+              <div class="w-block w-100">Thông số kỹ thuật</div>
+            </section>
 
             <h4 class="block w-100">
               <div class="d-flex flex-wrap align-items-start">
@@ -498,7 +784,9 @@
                 </div>
               </div>
             </h4>
-            <section>Loại gói tin</section>
+            <section>
+              <div class="w-block w-100">Loại gói tin</div>
+            </section>
           </div>
         </div>
       </section>
@@ -642,6 +930,8 @@
   ></script>
   <!-- jquery form step -->
   <script src="../Js/plugin/jquery-step.min.js"></script>
+  <!-- lc switch -->
+  <script src="../Js/plugin/lc_switch.min.js"></script>
   <!-- dang tin ban xe script -->
   <script src="../Js/dang-tin-ban-xe.min.js"></script>
 </html>

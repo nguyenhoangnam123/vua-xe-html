@@ -357,6 +357,17 @@ input:focus {
   padding-left: var(--navbar-item-margin);
 }
 
+/* main gray */
+.main-admin {
+  --gray-color: #f1f1f1;
+  background-color: var(--gray-color);
+}
+
+/* tinymce custom */
+.tox-notifications-container {
+  display: none !important;
+}
+
 /* responsive */
 @media (min-width: 1200px) {
   html {
