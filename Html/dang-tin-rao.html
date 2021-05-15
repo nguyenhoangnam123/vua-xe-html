@@ -767,271 +767,354 @@ h<!DOCTYPE html>
             </h4>
             <section>
               <div class="content-body w-100" id="thong-so-ky-thuat">
-                <div class="row w-100 justify-content-start">
-                  <div class="col-xl-9">
-                    <!-- hãng xe và dòng xe -->
-                    <div class="row">
-                      <div class="w-100 col-12">
-                        <h5
-                          class="
-                            uppercase
-                            font-bold
-                            c-main
-                            mb-1
-                            w-1oo
-                            form-group-title
-                            text-description
-                          "
-                        >
-                          Thông tin xe
-                        </h5>
+                <div class="w-100">
+                  <div class="row w-100 justify-content-start">
+                    <div class="col-xl-9">
+                      <!-- hãng xe và dòng xe -->
+                      <div class="row">
+                        <div class="w-100 col-12">
+                          <h5
+                            class="
+                              uppercase
+                              font-bold
+                              c-main
+                              mb-1
+                              w-1oo
+                              form-group-title
+                              text-description
+                            "
+                          >
+                            Thông tin xe
+                          </h5>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="hang-xe"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Hãng xe</div>
+                          </label>
+                          <select name="brand" id="hang-xe" class="w-100 h-100">
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="dong-xe"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Dòng xe</div>
+                          </label>
+                          <select name="line" id="dong-xe" class="w-100 h-100">
+                            <option value=""></option>
+                          </select>
+                        </div>
                       </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="hang-xe"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Hãng xe</div>
-                        </label>
-                        <select name="brand" id="hang-xe" class="w-100 h-100">
-                          <option value=""></option>
-                        </select>
+                      <!-- hết hãng xe và dòng xe -->
+                      <!-- Thông số kỹ thuật -->
+                      <div class="row">
+                        <div class="w-100 col-12">
+                          <h5
+                            class="
+                              uppercase
+                              font-bold
+                              c-main
+                              mb-1
+                              w-1oo
+                              form-group-title
+                              text-description
+                            "
+                          >
+                            Thông số kỹ thuật
+                          </h5>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="nhien-lieu"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Loại nhiên liệu</div>
+                          </label>
+                          <select
+                            name="fuel-type"
+                            id="nhien-lieu"
+                            class="w-100 h-100"
+                          >
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="col-xl-8 pb-3">
+                          <label
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Loại hộp số</div>
+                          </label>
+                          <div
+                            class="d-flex flex-wrap align-items-center"
+                            id="form-radio-group"
+                          >
+                            <div class="form-inline-radio">
+                              <input
+                                class="hidden radio"
+                                type="radio"
+                                name="status"
+                                id="tu-dong"
+                              />
+                              <label for="tu-dong" class="text-sm radio-label"
+                                >Tự động
+                              </label>
+                            </div>
+                            <div class="form-inline-radio">
+                              <input
+                                class="hidden radio"
+                                type="radio"
+                                name="status"
+                                id="san"
+                              />
+                              <label for="san" class="text-sm radio-label"
+                                >Sàn
+                              </label>
+                            </div>
+                            <div class="form-inline-radio">
+                              <input
+                                class="hidden radio"
+                                type="radio"
+                                name="status"
+                                id="hon-hop"
+                              />
+                              <label for="hon-hop" class="text-sm radio-label"
+                                >Hỗn hợp
+                              </label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="dong-xe"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Dòng xe</div>
-                        </label>
-                        <select name="line" id="dong-xe" class="w-100 h-100">
-                          <option value=""></option>
-                        </select>
+                      <!-- hết thông số kỹ thuật -->
+                      <!-- màu sắc và kiểu dáng -->
+                      <div class="row">
+                        <div class="w-100 col-12">
+                          <h5
+                            class="
+                              uppercase
+                              font-bold
+                              c-main
+                              mb-1
+                              w-1oo
+                              form-group-title
+                              text-description
+                            "
+                          >
+                            Màu sắc và kiểu dáng
+                          </h5>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="ngoai-that"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Màu ngoại thất</div>
+                          </label>
+                          <select
+                            name="exterior-color"
+                            id="ngoai-that"
+                            class="w-100 h-100"
+                          >
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="noi-that"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Màu nội thất</div>
+                          </label>
+                          <select
+                            name="interior-color"
+                            id="noi-that"
+                            class="w-100 h-100"
+                          >
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="col-xl-4 pb-3">
+                          <label
+                            for="so-ghe"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Số ghế</div>
+                          </label>
+                          <select
+                            name="seat-number"
+                            id="so-ghe"
+                            class="w-100 h-100"
+                          >
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="col-xl-4">
+                          <label
+                            for="so-cua"
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Số cửa</div>
+                          </label>
+                          <select
+                            name="door-number"
+                            id="so-cua"
+                            class="w-100 h-100"
+                          >
+                            <option value=""></option>
+                          </select>
+                        </div>
                       </div>
+                      <!-- hết màu sắc và kiểu dáng -->
                     </div>
-                    <!-- hết hãng xe và dòng xe -->
-                    <!-- Thông số kỹ thuật -->
-                    <div class="row">
-                      <div class="w-100 col-12">
-                        <h5
-                          class="
-                            uppercase
-                            font-bold
-                            c-main
-                            mb-1
-                            w-1oo
-                            form-group-title
-                            text-description
-                          "
-                        >
-                          Thông số kỹ thuật
-                        </h5>
-                      </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="nhien-lieu"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Loại nhiên liệu</div>
-                        </label>
-                        <select
-                          name="fuel-type"
-                          id="nhien-lieu"
-                          class="w-100 h-100"
-                        >
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-8 pb-3">
-                        <label
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Loại hộp số</div>
-                        </label>
-                        <div
-                          class="d-flex flex-wrap align-items-center"
-                          id="form-radio-group"
-                        >
-                          <div class="form-inline-radio">
-                            <input
-                              class="hidden radio"
-                              type="radio"
-                              name="status"
-                              id="tu-dong"
-                            />
-                            <label for="tu-dong" class="text-sm radio-label"
-                              >Tự động
-                            </label>
+                  </div>
+                </div>
+                <div class="w-100">
+                  <div class="row w-100 justify-content-start">
+                    <div class="col-xl-9">
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <label
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Năm sản xuất</div></label
+                          >
+                          <div class="d-flex flex-wrap">
+                            <div class="radio fit-content" data-id="2013">
+                              2013
+                            </div>
+                            <div class="radio fit-content" data-id="2014">
+                              2014
+                            </div>
+                            <div class="radio fit-content" data-id="2015">
+                              2015
+                            </div>
+                            <div class="radio fit-content" data-id="2016">
+                              2016
+                            </div>
+                            <div class="radio fit-content" data-id="2018">
+                              2018
+                            </div>
+                            <div class="radio fit-content" data-id="2019">
+                              2019
+                            </div>
+                            <div class="radio fit-content" data-id="2020">
+                              2020
+                            </div>
+                            <div
+                              class="radio fit-content active"
+                              data-id="2021"
+                            >
+                              2021
+                            </div>
                           </div>
-                          <div class="form-inline-radio">
-                            <input
-                              class="hidden radio"
-                              type="radio"
-                              name="status"
-                              id="san"
-                            />
-                            <label for="san" class="text-sm radio-label"
-                              >Sàn
-                            </label>
-                          </div>
-                          <div class="form-inline-radio">
-                            <input
-                              class="hidden radio"
-                              type="radio"
-                              name="status"
-                              id="hon-hop"
-                            />
-                            <label for="hon-hop" class="text-sm radio-label"
-                              >Hỗn hợp
-                            </label>
+                        </div>
+                        <div class="col-xl-4" id="tinh-trang-xe">
+                          <label
+                            class="
+                              title
+                              w-100
+                              d-flex
+                              flex-wrap
+                              w-100
+                              justify-content-between
+                              text-description text-sm
+                            "
+                          >
+                            <div class="font-bold">Tình trạng xe</div></label
+                          >
+                          <div class="w-100">
+                            <div
+                              class="block radio text-description active"
+                              data-id="0"
+                            >
+                              Đã qua sử dụng
+                            </div>
+                            <div
+                              class="block radio text-description"
+                              data-id="1"
+                            >
+                              Mới
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- hết thông số kỹ thuật -->
-                    <!-- màu sắc và kiểu dáng -->
-                    <div class="row">
-                      <div class="w-100 col-12">
-                        <h5
-                          class="
-                            uppercase
-                            font-bold
-                            c-main
-                            mb-1
-                            w-1oo
-                            form-group-title
-                            text-description
-                          "
-                        >
-                          Màu sắc và kiểu dáng
-                        </h5>
-                      </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="ngoai-that"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Màu ngoại thất</div>
-                        </label>
-                        <select
-                          name="exterior-color"
-                          id="ngoai-that"
-                          class="w-100 h-100"
-                        >
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="noi-that"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Màu nội thất</div>
-                        </label>
-                        <select
-                          name="interior-color"
-                          id="noi-that"
-                          class="w-100 h-100"
-                        >
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="so-ghe"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Số ghế</div>
-                        </label>
-                        <select
-                          name="seat-number"
-                          id="so-ghe"
-                          class="w-100 h-100"
-                        >
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-4 pb-3">
-                        <label
-                          for="so-cua"
-                          class="
-                            title
-                            w-100
-                            d-flex
-                            flex-wrap
-                            w-100
-                            justify-content-between
-                            text-description text-sm
-                          "
-                        >
-                          <div class="font-bold">Số cửa</div>
-                        </label>
-                        <select
-                          name="door-number"
-                          id="so-cua"
-                          class="w-100 h-100"
-                        >
-                          <option value=""></option>
-                        </select>
-                      </div>
-                    </div>
-                    <!-- hết màu sắc và kiểu dáng -->
                   </div>
                 </div>
               </div>
