@@ -134,12 +134,12 @@ input[type="radio"]:checked ~ label::before {
 
 #form-dang-tin .content .content-body {
   --gray-color: #e5e5e5;
-  padding: var(--navbar-item-margin) 0 1rem;
+  padding: var(--navbar-item-margin) 7px 1rem;
   border-bottom: 1px solid var(--gray-color);
 }
 
 #form-dang-tin .content .content-footer {
-  padding: 1rem 0;
+  padding: 1rem 7px;
 }
 
 #form-dang-tin .current-info {
@@ -468,7 +468,6 @@ label.image-uploader p {
 }
 
 .sales-type-item.active {
-  transform: scaleY(1.05);
   background-color: var(--main-color) !important;
 }
 
@@ -502,9 +501,12 @@ label.image-uploader p {
       var(--navbar-item-margin);
   }
   #form-dang-tin .content .content-footer {
-    padding: 1rem var(--navbar-item-margin);
+    padding: 1rem var(--navbar-item-margin) 0;
   }
   .steps ul li {
     width: 22%;
+  }
+  .sales-type-item.active {
+    transform: scaleY(1.05);
   }
 }
