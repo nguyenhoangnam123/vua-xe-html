@@ -204,6 +204,119 @@ table thead {
   max-width: 50%;
 }
 
+/* quan ly tin dang */
+.car-sale-item > .col-xs-4::after {
+  --car-sale-item-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.69) 100%
+  );
+  content: "";
+  background: var(--car-sale-item-gradient);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+}
+
+.car-sale-item > .col-md-8 {
+  border: 1px solid var(--light-gray-color);
+}
+
+.car-sale-item .car-sale-content__wrapper {
+  padding: 0.75rem 1.25rem;
+}
+
+.car-sale-content__header i {
+  --gray-color: #a2a5aa;
+  color: var(--gray-color);
+  font-size: 1.5rem;
+}
+
+.car-sale-button__group i {
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.action-left a {
+  position: relative;
+}
+
+.action-left a:nth-child(2)::after {
+  content: "";
+  font-size: 0.875rem;
+  position: absolute;
+  top: 0;
+  right: -0.75rem;
+  height: 100%;
+  width: 1px;
+  background-color: var(--dark-color);
+}
+
+.car-sale-item .save-group {
+  right: 1rem;
+  z-index: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0px 0px 5px 0px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.gift-bar {
+  bottom: 0.625rem;
+  left: 0.75rem;
+  z-index: 1;
+}
+
+.gift-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  margin-right: 0.3125rem;
+}
+
+.gift-box img {
+  width: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gift-tag {
+  width: 2.4375rem;
+  height: 1rem;
+  border-radius: 0 0 5px 0;
+  line-height: 1rem;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  top: 0.5rem;
+  right: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.car-sale-content__header {
+  --gray-color: #54555a;
+  color: var(--gray-color);
+}
+
+.car-sale-button__group {
+  max-width: 75%;
+}
+
+/* checkbox */
+.lcs_wrap {
+  width: 48px !important;
+}
+
+.lcs_switch.lcs_on .lcs_cursor {
+  left: 26px !important;
+}
+
 /* pagination */
 .pagination {
   margin-top: 1.5rem;
@@ -242,5 +355,8 @@ table thead {
   }
   #search {
     min-height: 100%;
+  }
+  .gift-tag {
+    margin-left: 3rem;
   }
 }
