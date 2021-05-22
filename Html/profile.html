@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome pro 5 -->
+    <link
+      rel="stylesheet"
+      href="/Assets/font/fontawesome-pro-5.15.2-web/css/all.min.css"
+    />
+    <!-- select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Style/bootstrap.custom.css" />
+    <link rel="stylesheet" href="../Style/style.css" />
+    <link rel="stylesheet" href="../Style/utils.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="../Style/profifle.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w-100 static">
+      <nav>
+        <div class="w-100 d-flex">
+          <div class="container">
+            <!-- menu-header top -->
+            <div
+              class="
+                hidden
+                xl:flex
+                flex-wrap
+                align-items-stretch
+                justify-content-between
+                bg-transparent
+                py-3
+              "
+              id="menu-header__top"
+            >
+              <div class="block">
+                <div class="w-100">
+                  <div class="d-flex flex-wrap">
+                    <a href="#">
+                      <div class="d-flex flex-wrap align-items-center mr-5">
+                        <img src="/Assets/icon/phone.svg" alt="" class="mr-1" />
+                        <div class="text-description text-xs c-white">
+                          0965131 633
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/Assets/icon/dollar.svg"
+                          alt=""
+                          class="mr-1"
+                        />
+                        <div class="text-description text-xs c-white uppercase">
+                          Báo giá
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block">
+                <div class="w-100">
+                  <div class="d-flex flex-wrap">
+                    <a class="col-4 no-padding" href="#">
+                      <div
+                        class="
+                          w-100
+                          d-flex
+                          align-items-center
+                          mr-5
+                          justify-content-end
+                        "
+                      >
+                        <img src="/Assets/icon/save.svg" alt="" class="mr-1" />
+                        <div class="text-description text-xs c-white uppercase">
+                          Xe đã lưu
+                        </div>
+                      </div>
+                    </a>
+                    <a class="col-4 no-padding" href="#">
+                      <div
+                        class="
+                          w-100
+                          d-flex
+                          align-items-center
+                          mr-5
+                          justify-content-end
+                        "
+                      >
+                        <div class="text-description text-xs c-white uppercase">
+                          Đăng ký
+                        </div>
+                      </div>
+                    </a>
+                    <a class="col-4 no-padding" href="#">
+                      <div
+                        class="
+                          w-100
+                          d-flex
+                          align-items-center
+                          mr-5
+                          justify-content-end
+                        "
+                      >
+                        <div class="text-description text-xs c-white uppercase">
+                          Đăng nhập
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end menu header top -->
+          </div>
+        </div>
+        <div class="w-100 d-flex">
+          <div class="container">
+            <!-- menu header behind -->
+            <div
+              class="
+                row
+                xl:no-margin
+                flex-wrap
+                align-items-stretch
+                justify-content-between
+                py-3
+                shadow-lg
+                bg-white
+                relative
+              "
+              id="menu-header__behind"
+            >
+              <div
+                class="
+                  d-flex
+                  xl:hidden
+                  align-items-center
+                  menu-header-behind__item
+                "
+                id="menu-header-behind__hambuger"
+              >
+                <a href="#">
+                  <img src="/Assets/icon/mobile-hambuger.svg" alt="" />
+                </a>
+              </div>
+              <div
+                class="
+                  relative
+                  d-flex
+                  flex-1
+                  justify-items-start
+                  align-items-stretch
+                "
+              >
+                <!-- mobile logo -->
+                <div class="block xl:hidden flex-shrink-0" id="mobile-logo">
+                  <a href="#">
+                    <img src="/Assets/image/logo-simple.png" alt="logo" />
+                  </a>
+                </div>
+                <!-- end mobile logo -->
+                <!-- desktop logo -->
+                <div class="hidden xl:block flex-shrink-0" id="logo">
+                  <a href="#">
+                    <img src="/Assets/image/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <!-- end desktop logo -->
+                <!-- menu header large screen -->
+                <div class="hidden xl:block">
+                  <div class="d-flex h-100">
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Mua bán xe</div>
+                          <span><i class="fal fa-chevron-down"></i></span>
+                        </div>
+                      </a>
+                      <div class="absolute bg-white submenu left-0">
+                        <div class="w-100">
+                          <div class="row">
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#">Honda City</a>
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#">BMW A8</a>
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#"
+                                >Mercedes GLS</a
+                              >
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#">Lexus LX570</a>
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#"
+                                >Maybach S600</a
+                              >
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#"
+                                >Bugatti Chiron</a
+                              >
+                            </div>
+                            <div class="col-xl-2 mb-3">
+                              <a class="c-dark text-sm" href="#"
+                                >Bugatti Veyron</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Đánh giá xe</div>
+                          <span><i class="fal fa-chevron-down"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Kinh nghiệm</div>
+                          <span><i class="fal fa-chevron-down"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Tư vấn</div>
+                          <span><i class="fal fa-chevron-down"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Otowiki</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <div class="block mr-2">Tin tức</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        relative
+                        menu-header-behind__item
+                      "
+                    >
+                      <a href="#" class="c-gray text-description text-xs">
+                        <div class="d-flex align-items-center">
+                          <img src="/Assets/icon/hambuger.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute hidden xl:block inset-y-0"
+                  id="menu-header-behind_setting"
+                >
+                  <div class="d-flex h-100">
+                    <!-- desktop search -->
+                    <div
+                      class="
+                        d-flex
+                        relative
+                        align-items-center
+                        menu-header-behind__item
+                        justify-content-end
+                      "
+                    >
+                      <img src="/Assets/icon/search.svg" alt="" />
+                    </div>
+                    <!-- end desktop search -->
+                    <!-- postSales button -->
+                    <div
+                      class="
+                        d-flex
+                        align-items-center
+                        menu-header-behind__item
+                        justify-content-end
+                      "
+                    >
+                      <a
+                        href="#"
+                        class="
+                          bg-main-gradient
+                          c-white
+                          text-center
+                          block
+                          uppercase
+                        "
+                        id="post-sales-button"
+                      >
+                        Đăng tin
+                      </a>
+                    </div>
+                    <!-- end PostSales button -->
+                  </div>
+                </div>
+                <!-- end menu header large screen -->
+                <!-- menu header small screen -->
+                <div
+                  class="absolute relative h-100 xl:hidden"
+                  id="menu-header-mobile_setting"
+                >
+                  <div
+                    class="
+                      d-flex
+                      flex-wrap
+                      justify-content-end
+                      align-items-center
+                      h-100
+                    "
+                  >
+                    <a
+                      href="#"
+                      class="block text-center c-white bg-gray rounded mr-2"
+                    >
+                      <i class="far fa-search"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="block text-center c-white bg-main rounded"
+                    >
+                      <i class="far fa-user-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- end menu header small screen -->
+              </div>
+            </div>
+            <!-- menu menu header behind -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <main class="main-admin">
+      <!-- banner -->
+      <section class="w-100 d-flex banner py-base">
+        <div class="container">
+          <img
+            src="../Assets/image/mua-ban-xe-banner.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </section>
+      <!-- hết banner -->
+      <!-- thong tin tai khoan -->
+      <div class="container" id="tai-khoan">
+        <div class="d-flex flex-wrap w-100">
+          <!-- menu tài khoản -->
+          <div class="col-xl-3">
+            <!-- thông tin tài khoản -->
+            <div class="w-100">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="w-50 xl:w-100 py-4">
+                  <div class="w-100 d-flex flex-wrap mb-3">
+                    <div
+                      class="
+                        avatar
+                        uppercase
+                        bg-center-center bg-cover
+                        flex-shrink-0
+                        mr-3
+                      "
+                      style="
+                        background-image: url('../Assets/image/audiA8.jpg');
+                        width: 5rem;
+                        height: 5rem;
+                      "
+                    ></div>
+                    <div class="block">
+                      <div class="w-100">
+                        <h5>Minh Nhựa</h5>
+                        <div class="text-xxs text-description">
+                          Số dư tài khoản
+                        </div>
+                        <div class="text-description c-main text-sm">
+                          <span>3,000.000</span>
+                          <span>VNĐ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ww-100">
+                    <a
+                      href="#"
+                      class="
+                        w-100
+                        bg-main-gradient
+                        c-white
+                        uppercase
+                        text-center
+                        block
+                        py-2
+                        text-description
+                        font-light
+                      "
+                    >
+                      <i class="fal fa-usd-circle mr-2"></i>
+                      Nạp tiền
+                    </a>
+                  </div>
+                </div>
+                <div class="w-50 xl:w-100 py-2 account-menu-info text-sm">
+                  <div
+                    class="d-flex flex-wrap justify-content-between pl-3 py-2"
+                  >
+                    <div class="d-flex flex-wrap align-items-center">
+                      <i class="fal fa-user mr-3"></i>
+                      Tài khoản
+                    </div>
+                    <div class="text-description font-bold">Tin đặc biệt</div>
+                  </div>
+                  <div
+                    class="d-flex flex-wrap justify-content-between pl-3 py-2"
+                  >
+                    <div class="d-flex flex-wrap align-items-center">
+                      <i class="fal fa-alarm-clock mr-3"></i>
+                      Ngày hết hạn
+                    </div>
+                    <div class="text-description font-bold">30/12/2051</div>
+                  </div>
+                </div>
+                <!-- menu tài khoản mobile -->
+                <div class="w-100 xl:hidden py-3"></div>
+                <!-- hết menu tài khoản mobile -->
+                <!-- menu tài khoản desktop -->
+                <div class="hidden w-100 xl:block py-3 text-sm">
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                      active
+                    "
+                  >
+                    <i class="fal fa-user mr-3"></i>
+                    Thông tin cá nhân
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-history mr-3"></i>
+                    Lịch sử giao dịch
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-file mr-3"></i>
+                    Quản lý tin rao
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-file-check mr-3"></i>
+                    Tin đã đăng
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-steering-wheel mr-3"></i>
+                    Đăng ký lái thử
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-money-check-alt mr-3"></i>
+                    Trả giá
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-copy mr-3"></i>
+                    Tài khoản mẹ con
+                  </a>
+                  <!-- <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                    "
+                  >
+                    <i class="fal fa-file-check mr-3"></i>
+                    Ưu đãi của tôi
+                  </a> -->
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-book-reader mr-3"></i>
+                    Khách hàng nhận tin rao
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-bookmark mr-3"></i>
+                    Xe đã lưu
+                  </a>
+                  <a
+                    href="#"
+                    class="
+                      w-100
+                      d-flex
+                      flex-wrap
+                      px-3
+                      align-items-center
+                      py-2
+                      account-menu-item
+                      text-description
+                    "
+                  >
+                    <i class="fal fa-sign-out mr-3"></i>
+                    Đăng xuất
+                  </a>
+                </div>
+                <!-- hết menu tài khoản desktop -->
+              </div>
+            </div>
+            <!-- thông tin tài khoản -->
+          </div>
+          <!-- hết menu tài khoản -->
+          <!-- nội dung menu -->
+          <div class="col-xl-9 h-100">
+            <div class="w-100 admin-menu-content bg-white h-100">
+              <h1 class="font-light">Thông tin cá nhân</h1>
+              <div class="text-description font-light text-sm">
+                Quản lý thông tin hồ sơ để bảo mật tài khoản
+              </div>
+              <div class="row" id="account-form">
+                <div class="col-xl-8 text-sm">
+                  <div class="row">
+                    <div class="col-xl-6 py-2">
+                      <label for="username" class="w-100 font-bold"
+                        >Tên đăng nhập
+                        <span class="c-main h-100">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="username"
+                        class="w-100"
+                        placeholder="Nhập tên đăng nhập"
+                      />
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="password" class="w-100 font-bold"
+                        >Mật khẩu <span class="c-main h-100">*</span></label
+                      >
+                      <div class="relative w-100 input-wrapper iconic-input">
+                        <input
+                          type="password"
+                          id="password"
+                          name="password"
+                          placeholder="Nhập mật khẩu"
+                          class="w-100"
+                        />
+                        <div
+                          class="
+                            icon-wrap
+                            absolute
+                            d-flex
+                            h-100
+                            align-items-center
+                          "
+                        >
+                          <i class="fal fa-eye c-main inactive-icon"></i>
+                          <i
+                            class="fal fa-eye-slash c-main active-icon"
+                            style="display: none"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 py-2">
+                      <label for="name" class="w-100 font-bold"
+                        >Tên <span class="c-main h-100">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="name"
+                        class="w-100"
+                        placeholder="Nhập tên"
+                      />
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="middlename" class="w-100 font-bold"
+                        >Họ và tên đệm
+                        <span class="c-main h-100">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="middlename"
+                        class="w-100"
+                        placeholder="Nhập họ và tên đệm"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 py-2 font-bold">
+                      <label for="phone" class="w-100"
+                        >Số điện thoại
+                        <span class="c-main h-100">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="phone"
+                        class="w-100"
+                        placeholder="Nhập số điện thoại"
+                      />
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="email" class="w-100 font-bold"
+                        >Email <span class="c-main h-100">*</span></label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        class="w-100"
+                        placeholder="Nhập địa chỉ email"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 py-2">
+                      <label for="tinh-thanh" class="w-100 font-bold"
+                        >Tỉnh/Thành phố
+                        <span class="c-main h-100">*</span></label
+                      >
+                      <select name="province" id="tinh-thanh" class="w-100">
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="number" class="w-100 font-bold"
+                        >Số đăng ký dinh doanh</label
+                      >
+                      <input
+                        type="text"
+                        name="number"
+                        class="w-100"
+                        placeholder="Nhập số đăng ký kinh doanh"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 py-2">
+                      <label for="identity" class="w-100 font-bold"
+                        >Số CMND/CCCD</label
+                      >
+                      <input
+                        type="text"
+                        name="identity"
+                        class="w-100"
+                        placeholder="Nhập số CMND/CCCD"
+                      />
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="tax" class="w-100 font-bold"
+                        >Mã số thuế</label
+                      >
+                      <input
+                        type="text"
+                        name="tax"
+                        class="w-100"
+                        placeholder="Nhập mã số thuế"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 py-2">
+                      <label for="facebook" class="w-100 font-bold"
+                        >Facebook</label
+                      >
+                      <input
+                        type="text"
+                        name="facebook"
+                        class="w-100"
+                        placeholder="Nhập địa chỉ Facebook"
+                      />
+                    </div>
+                    <div class="col-xl-6 py-2">
+                      <label for="tax" class="w-100 font-bold">Zalo</label>
+                      <input
+                        type="text"
+                        name="tax"
+                        class="w-100"
+                        placeholder="Nhập địa chỉ Zalo"
+                      />
+                    </div>
+                  </div>
+                  <div id="form-submit">
+                    <a
+                      href="#"
+                      class="uppercase text-description fit-content"
+                      id="form-submit-button"
+                    >
+                      <i class="fal fa-save mr-2"></i>
+                      Lưu thay đổi
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xl-4 hidden xl:block">
+                  <div class="w-75 mx-auto text-center py-2">
+                    <div
+                      class="
+                        desktop-avatar
+                        mx-auto
+                        w-100
+                        bg-cover bg-center-center
+                      "
+                      style="
+                        background-image: url('../Assets/image/audiA8.jpg');
+                      "
+                    ></div>
+                    <a
+                      class="change-avatar-button mx-auto uppercase block"
+                      href="#"
+                    >
+                      <i class="fal fa-image"></i>
+                      Thay ảnh
+                    </a>
+                    <div class="uppercase text-sm">JPG, JPEG & PNG</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nội dung menu -->
+        </div>
+      </div>
+      <!-- het thong tin tai khoan -->
+    </main>
+    <!-- footer -->
+    <footer class="w-100">
+      <div class="container">
+        <!-- menu footer top -->
+        <div class="row" id="menu-footer__top">
+          <div class="col-lg-4 mb-5 xl:no-margin">
+            <div class="block mb-5">
+              <img src="/Assets/image/logo-inverse.png" alt="" />
+            </div>
+            <p class="block c-white text-sm">
+              <span
+                ><img src="/Assets/icon/address.svg" alt="" class="mr-2"
+              /></span>
+              169 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội.
+            </p>
+            <p class="block c-white text-sm">
+              <span
+                ><img src="/Assets/icon/mobile.svg" alt="" class="mr-2"
+              /></span>
+              +84 965 131 633
+            </p>
+            <p class="block c-white mb-5 text-sm">
+              <span
+                ><img src="/Assets/icon/mail.svg" alt="" class="mr-2"
+              /></span>
+              support@vuaxe.com.vn
+            </p>
+            <div class="d-flex w-100" class="xl:fit-content" id="social-icon">
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/linkelin.svg" alt="linkelin" />
+                </a>
+              </div>
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/facebook.svg" alt="facebook" />
+                </a>
+              </div>
+              <div class="mr-4">
+                <a href="#">
+                  <img src="/Assets/icon/insta.svg" alt="instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 col-lg-3 text-white text-sm">
+            <h5 class="mb-4">Hỗ trợ khách hàng</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Quy định, chính sách</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Điều khoản hoạt động salon</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Câu hỏi thường gặp</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Liên hệ</a>
+            </p>
+          </div>
+          <div class="w-100 col-lg-2 text-white text-sm">
+            <h5 class="mb-4">Về chúng tôi</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Giới thiệu</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Quy chế hoạt động</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Tuyển dụng</a>
+            </p>
+          </div>
+          <div class="w-100 col-lg-3 text-white text-sm">
+            <h5 class="mb-4">Tin tức bán xe</h5>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light">Báo giá dịch vụ</a>
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Khuyến mại từ các hãng</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="#" class="text-white font-light"
+                >Cải tiến & tính năng mới</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- end menu footer top -->
+        <hr />
+        <div class="row text-sm text-white" id="menu-footer__bottom">
+          <div class="col-lg-7">
+            <h6 class="mb-3">
+              &#169; 2021 vuaxe.com.vn. Bản quyền thuộc về NewgenMedia.com.vn
+            </h6>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy chứng nhận ĐKDN số 0106774081 cấp bởi Phòng ĐKKD Hà Nội ngày
+              11/02/2015
+            </p>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy phép ICP số 978/GP-TTĐT do Sở Thông tin và Truyền thông Hà
+              Nội cấp ngày 14/4/2015
+            </p>
+            <p class="mr-2 text-xxs c-light-gray">
+              Giấy phép sửa đổi, bổ sung Giấy phép ICP Số 4362/GP-TTĐT do Sở
+              Thông tin và Truyền thông Hà Nội cấp ngày 20/10/2017
+            </p>
+          </div>
+          <div class="col-lg-5 float-right">
+            <img
+              src="/Assets/image/certification.png"
+              alt="Đăng ký Bộ Công Thương"
+              class="float-right"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- select2 -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!-- jquery validate -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+    integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+    crossorigin="anonymous"
+  ></script>
+  <!-- jquery form step -->
+  <script src="../Js/plugin/jquery-step.min.js"></script>
+  <!-- lc switch -->
+  <script src="../Js/plugin/lc_switch.min.js"></script>
+  <!-- custom script -->
+  <script src="../Js/profile.min.js"></script>
+</html>
