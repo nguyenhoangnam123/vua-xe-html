@@ -32,6 +32,8 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../Style/datepicker.min.css" />
 
     <!-- custom style -->
     <link rel="stylesheet" href="../Style/profifle.min.css" />
@@ -937,7 +939,164 @@
 
               <!-- lich su giao dich -->
               <h4></h4>
-              <section class="w-100">Lịch sử giao dịch</section>
+              <section class="w-100">
+                <h1 class="font-light">Lịch sử giao dịch</h1>
+                <div class="text-description font-light text-sm">
+                  Xem các giao dịch đã thực hiện
+                </div>
+                <div class="row text-sm" id="transaction-filter-form">
+                  <div class="col-6 col-md-4 py-2">
+                    <select
+                      name="transactiontype"
+                      id="loai-giao-dich"
+                      class="w-100"
+                    >
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-md-4 py-2">
+                    <input
+                      type="text"
+                      name="code"
+                      placeholder="Mã giao dịch"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="col-6 col-md-4 py-2">
+                    <div class="w-100 relative iconic-input">
+                      <input
+                        data-toggle="datepicker"
+                        name="startDate"
+                        class="form-control startDate"
+                        placeholder="Ngày bắt đầu"
+                        autocomplete="off"
+                        id="bat-dau"
+                      />
+                      <div
+                        class="
+                          icon-wrap
+                          absolute
+                          d-flex
+                          h-100
+                          align-items-center
+                          docs-datepicker-trigger
+                        "
+                      >
+                        <i class="fal fa-calendar-alt c-main"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 py-2">
+                    <div class="w-100 relative iconic-input">
+                      <input
+                        data-toggle="datepicker"
+                        name="endDate"
+                        class="form-control endDate"
+                        placeholder="Ngày kết thúc"
+                        autocomplete="off"
+                        id="ket-thuc"
+                      />
+                      <div
+                        class="
+                          icon-wrap
+                          absolute
+                          d-flex
+                          h-100
+                          align-items-center
+                        "
+                      >
+                        <i class="fal fa-calendar-alt c-main"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 py-2">
+                    <a
+                      href="#"
+                      class="
+                        uppercase
+                        c-white
+                        bg-main
+                        w-100
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                        text-description
+                        font-light
+                        h-100
+                      "
+                      id="search"
+                    >
+                      <i class="fal fa-search mr-2"></i>
+                      Tìm kiếm
+                    </a>
+                  </div>
+                </div>
+                <!-- bang lich su giao dich desktop -->
+                <div class="flex-wrap hidden xl:flex table">
+                  <table class="w-100 text-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thời gian</th>
+                        <th scope="col">Loại giao dịch</th>
+                        <th scope="col">Nội dung</th>
+                        <th scope="col">Số tiền</th>
+                        <th scope="col">Số dư trước</th>
+                        <th scope="col">Số dư cuối</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>12:50, 28/04/2021</td>
+                        <td>Nạp tiền thành công</td>
+                        <td>KM đăng tin thường</td>
+                        <td>7,000,000 đ</td>
+                        <td>9,000,000 đ</td>
+                        <td>4,236,800 đ</td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- het bang lich su giao dich desktop -->
+                <!-- bang lich su giao dich mobile -->
+                <div class="block xl:hidden table">
+                  <div class="table-header clearfix w-100 block p-2">
+                    <div class="float-left">Giao dịch</div>
+                    <div class="float-right">Giá trị</div>
+                  </div>
+                  <div class="w-100 table-content text-sm">
+                    <div
+                      class="
+                        table-item
+                        d-flex
+                        flex-wrap
+                        w-100
+                        justify-content-between
+                        p-2
+                      "
+                    >
+                      <div class="table-item-column__left">
+                        <div class="mb-1">Nạp tiền thành công</div>
+                        <div class="mb-1">Km đăng tin thường</div>
+                        <div class="mb-1">12:50, 28/04/2021</div>
+                      </div>
+                      <div class="table-item-column-right">
+                        <div class="mb-1">7,000,000 đ</div>
+                        <div class="mb-1">9,000,000 đ</div>
+                        <div class="mb-1">4,236,800 đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- het bang lich su giao dich mobile -->
+                <!-- pagination -->
+                <div class="d-flex flex-wrap pagination justify-content-center">
+                  <div class="pagination-item active mr-2">1</div>
+                  <div class="pagination-item mr-2">2</div>
+                  <div class="pagination-item mr-2">3</div>
+                </div>
+                <!-- het pagination -->
+              </section>
               <!-- het lich su giao dich -->
 
               <!-- quan ly tin rao -->
@@ -1114,6 +1273,8 @@
     integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
     crossorigin="anonymous"
   ></script>
+  <!-- datepicker -->
+  <script src="../Js/plugin/datepicker.min.js"></script>
   <!-- jquery form step -->
   <script src="../Js/plugin/jquery-step.min.js"></script>
   <!-- lc switch -->

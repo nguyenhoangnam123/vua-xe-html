@@ -51,6 +51,13 @@ input {
   height: 0.875rem;
   border-radius: 0.125rem;
 }
+
+/* custom table */
+table thead {
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
 /* account menu */
 .main-admin {
   padding-bottom: 2rem;
@@ -110,7 +117,8 @@ input {
   padding: 1.5rem 0.5rem;
 }
 
-#account-form {
+#account-form,
+#transaction-filter-form {
   margin-top: var(--navbar-item-margin);
 }
 
@@ -150,6 +158,46 @@ input {
   padding: 0.5rem 1.5rem;
 }
 
+/* form lich su giao dich */
+#transaction-filter-form {
+  margin-bottom: 1.5rem;
+}
+
+#search {
+  min-height: 3rem;
+}
+
+.table-header {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.table-item {
+  --gray-color: #c5c8cc;
+  border: 1px solid var(--gray-color);
+}
+
+/* pagination */
+.pagination {
+  margin-top: 1.5rem;
+}
+
+.pagination-item {
+  --gray-color: #c5c8cc;
+  width: 2rem;
+  height: 2rem;
+  color: var(--gray-color);
+  text-align: center;
+  border: 1px solid var(--gray-color);
+  line-height: 2rem;
+}
+
+.pagination-item.active {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: none;
+}
+
 /* responsive */
 @media (min-width: 1200px) {
   .main-admin {
@@ -164,5 +212,8 @@ input {
   .account-menu-info {
     --light-gray-color: #e4e4e4;
     border-bottom: 1px solid var(--light-gray-color);
+  }
+  #search {
+    min-height: 100%;
   }
 }
