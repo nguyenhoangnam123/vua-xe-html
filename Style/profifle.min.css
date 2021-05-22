@@ -58,7 +58,7 @@ input {
 
 .account-menu-info {
   --light-gray-color: #e4e4e4;
-  border-bottom: 1px solid var(--light-gray-color);
+  border-bottom: none;
 }
 
 .account-menu-item {
@@ -101,6 +101,11 @@ input {
 }
 
 /* account menu content */
+#thong-tin-tai-khoan .steps,
+#thong-tin-tai-khoan .actions {
+  display: none;
+}
+
 .admin-menu-content {
   padding: 1.5rem 0.5rem;
 }
@@ -109,16 +114,20 @@ input {
   margin-top: var(--navbar-item-margin);
 }
 
-.desktop-avatar {
+.avatar {
   border-radius: 50%;
   background-color: var(--yellow-color);
   margin-bottom: 1.25rem;
 }
 
-.desktop-avatar::before {
+.avatar::before {
   content: "";
   display: block;
   padding-top: 100%;
+}
+
+.avatar-mobile {
+  margin-bottom: 0 !important;
 }
 
 .change-avatar-button,
@@ -148,5 +157,12 @@ input {
   }
   .admin-menu-content {
     padding: 1.5rem 2.25rem;
+  }
+  .avatar-mobile {
+    width: 7.5rem !important;
+  }
+  .account-menu-info {
+    --light-gray-color: #e4e4e4;
+    border-bottom: 1px solid var(--light-gray-color);
   }
 }

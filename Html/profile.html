@@ -435,23 +435,23 @@
             <!-- thông tin tài khoản -->
             <div class="w-100">
               <div class="d-flex flex-wrap align-items-center">
-                <div class="w-50 xl:w-100 py-4">
+                <div class="w-100 xl:w-100 py-4">
                   <div class="w-100 d-flex flex-wrap mb-3">
                     <div
                       class="
-                        avatar
+                        avatar avatar-mobile
                         uppercase
                         bg-center-center bg-cover
                         flex-shrink-0
                         mr-3
+                        w-50
                       "
                       style="
                         background-image: url('../Assets/image/audiA8.jpg');
-                        width: 5rem;
-                        height: 5rem;
                       "
                     ></div>
-                    <div class="block">
+                    <!-- desltop only -->
+                    <div class="d-flex flex-wrap align-items-center">
                       <div class="w-100">
                         <h5>Minh Nhựa</h5>
                         <div class="text-xxs text-description">
@@ -463,8 +463,30 @@
                         </div>
                       </div>
                     </div>
+                    <!-- desktop only -->
                   </div>
-                  <div class="ww-100">
+                  <div class="w-100">
+                    <!-- mobile only -->
+                    <a
+                      href="#"
+                      class="
+                        w-100
+                        bg-dark
+                        c-white
+                        uppercase
+                        text-center
+                        block
+                        py-2
+                        text-description
+                        font-light
+                        mb-2
+                        xl:hidden
+                      "
+                    >
+                      <i class="fal fa-image mr-2"></i>
+                      Thay ảnh
+                    </a>
+                    <!-- mobile only -->
                     <a
                       href="#"
                       class="
@@ -484,7 +506,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="w-50 xl:w-100 py-2 account-menu-info text-sm">
+                <div class="w-100 xl:w-100 py-2 account-menu-info text-sm">
                   <div
                     class="d-flex flex-wrap justify-content-between pl-3 py-2"
                   >
@@ -508,7 +530,10 @@
                 <div class="w-100 xl:hidden py-3"></div>
                 <!-- hết menu tài khoản mobile -->
                 <!-- menu tài khoản desktop -->
-                <div class="hidden w-100 xl:block py-3 text-sm">
+                <div
+                  class="hidden w-100 xl:block py-3 text-sm"
+                  id="menu-account-desktop"
+                >
                   <a
                     href="#"
                     class="
@@ -522,6 +547,7 @@
                       text-description
                       active
                     "
+                    data-step="0"
                   >
                     <i class="fal fa-user mr-3"></i>
                     Thông tin cá nhân
@@ -538,6 +564,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="1"
                   >
                     <i class="fal fa-history mr-3"></i>
                     Lịch sử giao dịch
@@ -554,6 +581,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="2"
                   >
                     <i class="fal fa-file mr-3"></i>
                     Quản lý tin rao
@@ -570,6 +598,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="3"
                   >
                     <i class="fal fa-file-check mr-3"></i>
                     Tin đã đăng
@@ -586,6 +615,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="4"
                   >
                     <i class="fal fa-steering-wheel mr-3"></i>
                     Đăng ký lái thử
@@ -602,6 +632,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="5"
                   >
                     <i class="fal fa-money-check-alt mr-3"></i>
                     Trả giá
@@ -618,6 +649,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="6"
                   >
                     <i class="fal fa-copy mr-3"></i>
                     Tài khoản mẹ con
@@ -649,6 +681,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="7"
                   >
                     <i class="fal fa-book-reader mr-3"></i>
                     Khách hàng nhận tin rao
@@ -665,6 +698,7 @@
                       account-menu-item
                       text-description
                     "
+                    data-step="8"
                   >
                     <i class="fal fa-bookmark mr-3"></i>
                     Xe đã lưu
@@ -694,209 +728,252 @@
           <!-- hết menu tài khoản -->
           <!-- nội dung menu -->
           <div class="col-xl-9 h-100">
-            <div class="w-100 admin-menu-content bg-white h-100">
-              <h1 class="font-light">Thông tin cá nhân</h1>
-              <div class="text-description font-light text-sm">
-                Quản lý thông tin hồ sơ để bảo mật tài khoản
-              </div>
-              <div class="row" id="account-form">
-                <div class="col-xl-8 text-sm">
-                  <div class="row">
-                    <div class="col-xl-6 py-2">
-                      <label for="username" class="w-100 font-bold"
-                        >Tên đăng nhập
-                        <span class="c-main h-100">*</span></label
-                      >
-                      <input
-                        type="text"
-                        name="username"
-                        class="w-100"
-                        placeholder="Nhập tên đăng nhập"
-                      />
-                    </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="password" class="w-100 font-bold"
-                        >Mật khẩu <span class="c-main h-100">*</span></label
-                      >
-                      <div class="relative w-100 input-wrapper iconic-input">
-                        <input
-                          type="password"
-                          id="password"
-                          name="password"
-                          placeholder="Nhập mật khẩu"
-                          class="w-100"
-                        />
-                        <div
-                          class="
-                            icon-wrap
-                            absolute
-                            d-flex
-                            h-100
-                            align-items-center
-                          "
+            <div
+              class="w-100 admin-menu-content bg-white h-100"
+              id="thong-tin-tai-khoan"
+            >
+              <!-- form account -->
+              <h4></h4>
+              <section class="w-100">
+                <h1 class="font-light">Thông tin cá nhân</h1>
+                <div class="text-description font-light text-sm">
+                  Quản lý thông tin hồ sơ để bảo mật tài khoản
+                </div>
+                <div class="row" id="account-form">
+                  <div class="col-xl-8 text-sm">
+                    <div class="row">
+                      <div class="col-xl-6 py-2">
+                        <label for="username" class="w-100 font-bold"
+                          >Tên đăng nhập
+                          <span class="c-main h-100">*</span></label
                         >
-                          <i class="fal fa-eye c-main inactive-icon"></i>
-                          <i
-                            class="fal fa-eye-slash c-main active-icon"
-                            style="display: none"
-                          ></i>
+                        <input
+                          type="text"
+                          name="username"
+                          class="w-100"
+                          placeholder="Nhập tên đăng nhập"
+                        />
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="password" class="w-100 font-bold"
+                          >Mật khẩu <span class="c-main h-100">*</span></label
+                        >
+                        <div class="relative w-100 input-wrapper iconic-input">
+                          <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Nhập mật khẩu"
+                            class="w-100"
+                          />
+                          <div
+                            class="
+                              icon-wrap
+                              absolute
+                              d-flex
+                              h-100
+                              align-items-center
+                            "
+                          >
+                            <i class="fal fa-eye c-main inactive-icon"></i>
+                            <i
+                              class="fal fa-eye-slash c-main active-icon"
+                              style="display: none"
+                            ></i>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-xl-6 py-2">
+                        <label for="name" class="w-100 font-bold"
+                          >Tên <span class="c-main h-100">*</span></label
+                        >
+                        <input
+                          type="text"
+                          name="name"
+                          class="w-100"
+                          placeholder="Nhập tên"
+                        />
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="middlename" class="w-100 font-bold"
+                          >Họ và tên đệm
+                          <span class="c-main h-100">*</span></label
+                        >
+                        <input
+                          type="text"
+                          name="middlename"
+                          class="w-100"
+                          placeholder="Nhập họ và tên đệm"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 py-2 font-bold">
+                        <label for="phone" class="w-100"
+                          >Số điện thoại
+                          <span class="c-main h-100">*</span></label
+                        >
+                        <input
+                          type="text"
+                          name="phone"
+                          class="w-100"
+                          placeholder="Nhập số điện thoại"
+                        />
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="email" class="w-100 font-bold"
+                          >Email <span class="c-main h-100">*</span></label
+                        >
+                        <input
+                          type="email"
+                          name="email"
+                          class="w-100"
+                          placeholder="Nhập địa chỉ email"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 py-2">
+                        <label for="tinh-thanh" class="w-100 font-bold"
+                          >Tỉnh/Thành phố
+                          <span class="c-main h-100">*</span></label
+                        >
+                        <select name="province" id="tinh-thanh" class="w-100">
+                          <option></option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="number" class="w-100 font-bold"
+                          >Số đăng ký dinh doanh</label
+                        >
+                        <input
+                          type="text"
+                          name="number"
+                          class="w-100"
+                          placeholder="Nhập số đăng ký kinh doanh"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 py-2">
+                        <label for="identity" class="w-100 font-bold"
+                          >Số CMND/CCCD</label
+                        >
+                        <input
+                          type="text"
+                          name="identity"
+                          class="w-100"
+                          placeholder="Nhập số CMND/CCCD"
+                        />
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="tax" class="w-100 font-bold"
+                          >Mã số thuế</label
+                        >
+                        <input
+                          type="text"
+                          name="tax"
+                          class="w-100"
+                          placeholder="Nhập mã số thuế"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 py-2">
+                        <label for="facebook" class="w-100 font-bold"
+                          >Facebook</label
+                        >
+                        <input
+                          type="text"
+                          name="facebook"
+                          class="w-100"
+                          placeholder="Nhập địa chỉ Facebook"
+                        />
+                      </div>
+                      <div class="col-xl-6 py-2">
+                        <label for="tax" class="w-100 font-bold">Zalo</label>
+                        <input
+                          type="text"
+                          name="tax"
+                          class="w-100"
+                          placeholder="Nhập địa chỉ Zalo"
+                        />
+                      </div>
+                    </div>
+                    <div id="form-submit">
+                      <a
+                        href="#"
+                        class="uppercase text-description fit-content"
+                        id="form-submit-button"
+                      >
+                        <i class="fal fa-save mr-2"></i>
+                        Lưu thay đổi
+                      </a>
+                    </div>
                   </div>
-                  <div class="row">
-                    <div class="col-xl-6 py-2">
-                      <label for="name" class="w-100 font-bold"
-                        >Tên <span class="c-main h-100">*</span></label
+                  <div class="col-xl-4 hidden xl:block">
+                    <div class="w-75 mx-auto text-center py-2">
+                      <div
+                        class="avatar mx-auto w-100 bg-cover bg-center-center"
+                        style="
+                          background-image: url('../Assets/image/audiA8.jpg');
+                        "
+                      ></div>
+                      <a
+                        class="change-avatar-button mx-auto uppercase block"
+                        href="#"
                       >
-                      <input
-                        type="text"
-                        name="name"
-                        class="w-100"
-                        placeholder="Nhập tên"
-                      />
+                        <i class="fal fa-image"></i>
+                        Thay ảnh
+                      </a>
+                      <div class="uppercase text-sm">JPG, JPEG & PNG</div>
                     </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="middlename" class="w-100 font-bold"
-                        >Họ và tên đệm
-                        <span class="c-main h-100">*</span></label
-                      >
-                      <input
-                        type="text"
-                        name="middlename"
-                        class="w-100"
-                        placeholder="Nhập họ và tên đệm"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-6 py-2 font-bold">
-                      <label for="phone" class="w-100"
-                        >Số điện thoại
-                        <span class="c-main h-100">*</span></label
-                      >
-                      <input
-                        type="text"
-                        name="phone"
-                        class="w-100"
-                        placeholder="Nhập số điện thoại"
-                      />
-                    </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="email" class="w-100 font-bold"
-                        >Email <span class="c-main h-100">*</span></label
-                      >
-                      <input
-                        type="email"
-                        name="email"
-                        class="w-100"
-                        placeholder="Nhập địa chỉ email"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-6 py-2">
-                      <label for="tinh-thanh" class="w-100 font-bold"
-                        >Tỉnh/Thành phố
-                        <span class="c-main h-100">*</span></label
-                      >
-                      <select name="province" id="tinh-thanh" class="w-100">
-                        <option></option>
-                      </select>
-                    </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="number" class="w-100 font-bold"
-                        >Số đăng ký dinh doanh</label
-                      >
-                      <input
-                        type="text"
-                        name="number"
-                        class="w-100"
-                        placeholder="Nhập số đăng ký kinh doanh"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-6 py-2">
-                      <label for="identity" class="w-100 font-bold"
-                        >Số CMND/CCCD</label
-                      >
-                      <input
-                        type="text"
-                        name="identity"
-                        class="w-100"
-                        placeholder="Nhập số CMND/CCCD"
-                      />
-                    </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="tax" class="w-100 font-bold"
-                        >Mã số thuế</label
-                      >
-                      <input
-                        type="text"
-                        name="tax"
-                        class="w-100"
-                        placeholder="Nhập mã số thuế"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-6 py-2">
-                      <label for="facebook" class="w-100 font-bold"
-                        >Facebook</label
-                      >
-                      <input
-                        type="text"
-                        name="facebook"
-                        class="w-100"
-                        placeholder="Nhập địa chỉ Facebook"
-                      />
-                    </div>
-                    <div class="col-xl-6 py-2">
-                      <label for="tax" class="w-100 font-bold">Zalo</label>
-                      <input
-                        type="text"
-                        name="tax"
-                        class="w-100"
-                        placeholder="Nhập địa chỉ Zalo"
-                      />
-                    </div>
-                  </div>
-                  <div id="form-submit">
-                    <a
-                      href="#"
-                      class="uppercase text-description fit-content"
-                      id="form-submit-button"
-                    >
-                      <i class="fal fa-save mr-2"></i>
-                      Lưu thay đổi
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xl-4 hidden xl:block">
-                  <div class="w-75 mx-auto text-center py-2">
-                    <div
-                      class="
-                        desktop-avatar
-                        mx-auto
-                        w-100
-                        bg-cover bg-center-center
-                      "
-                      style="
-                        background-image: url('../Assets/image/audiA8.jpg');
-                      "
-                    ></div>
-                    <a
-                      class="change-avatar-button mx-auto uppercase block"
-                      href="#"
-                    >
-                      <i class="fal fa-image"></i>
-                      Thay ảnh
-                    </a>
-                    <div class="uppercase text-sm">JPG, JPEG & PNG</div>
                   </div>
                 </div>
-              </div>
+              </section>
+              <!-- het form -->
+
+              <!-- lich su giao dich -->
+              <h4></h4>
+              <section class="w-100">Lịch sử giao dịch</section>
+              <!-- het lich su giao dich -->
+
+              <!-- quan ly tin rao -->
+              <h4></h4>
+              <section class="w-100">Quản lý tin rao</section>
+              <!-- het quan ly tin rao -->
+
+              <!-- tin da dang -->
+              <h4></h4>
+              <section class="w-100">Tin da dang</section>
+              <!-- het tin da dang -->
+
+              <!-- dk lai thu -->
+              <h4></h4>
+              <section class="w-100">Dk lai thu</section>
+              <!-- het dk lai thu -->
+
+              <!-- tra gia -->
+              <h4></h4>
+              <section class="w-100">Tra gia</section>
+              <!-- het tra gia -->
+
+              <!-- tk me con -->
+              <h4></h4>
+              <section class="w-100">Tk me con</section>
+              <!-- het tk me con -->
+
+              <!-- kh nhan tin rao -->
+              <h4></h4>
+              <section class="w-100">kh nhận tin rao</section>
+              <!-- het kh nhan tin rao -->
+
+              <!-- xe da luu -->
+              <h4></h4>
+              <section class="w-100">xe da luu</section>
+              <!-- het xe da luu -->
             </div>
           </div>
           <!-- nội dung menu -->
