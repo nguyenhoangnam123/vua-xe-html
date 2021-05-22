@@ -118,7 +118,8 @@ table thead {
 }
 
 #account-form,
-#transaction-filter-form {
+#transaction-filter-form,
+.post-table {
   margin-top: var(--navbar-item-margin);
 }
 
@@ -175,6 +176,32 @@ table thead {
 .table-item {
   --gray-color: #c5c8cc;
   border: 1px solid var(--gray-color);
+}
+
+/* form quan ly tin dang */
+.post-approve-state {
+  background-color: var(--light-gray-color);
+  color: var(--darrk-color);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.post-approve-state.approve {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.post-approve-state.reject {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.table-item-column__left {
+  max-width: 50%;
 }
 
 /* pagination */
