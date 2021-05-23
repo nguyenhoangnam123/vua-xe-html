@@ -308,6 +308,23 @@ table thead {
   max-width: 75%;
 }
 
+/* dang ky lai thu */
+.table-action-button {
+  border: 1px solid var(--hr-color);
+}
+
+.table-action-button:hover {
+  color: var(--dark-color);
+}
+
+.table-action-button.active {
+  border: none;
+}
+
+.table-action-button.active:hover {
+  color: var(--white-color);
+}
+
 /* checkbox */
 .lcs_wrap {
   width: 48px !important;
