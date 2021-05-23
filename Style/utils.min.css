@@ -502,6 +502,12 @@
   border-radius: 50% !important;
 }
 
+.rectangle::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 @media (min-width: 576px) {
   .sm\:hidden {
     display: none !important;
