@@ -107,6 +107,18 @@ table thead {
   transform-origin: top left;
 }
 
+#menu-account-mobile > .col-6 {
+  height: var(--input-modal-height);
+}
+
+#menu-account-mobile .account-menu-item {
+  border: 1px solid var(--light-gray-color);
+}
+
+#menu-account-mobile .account-menu-item.active {
+  border: none;
+}
+
 /* account menu content */
 #thong-tin-tai-khoan .steps,
 #thong-tin-tai-khoan .actions {
