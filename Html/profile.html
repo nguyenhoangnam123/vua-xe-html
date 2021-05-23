@@ -472,8 +472,7 @@
                   </div>
                   <div class="w-100">
                     <!-- mobile only -->
-                    <a
-                      href="#"
+                    <label
                       class="
                         w-100
                         bg-dark
@@ -487,10 +486,12 @@
                         mb-2
                         xl:hidden
                       "
+                      for="mobile-avatar"
                     >
                       <i class="fal fa-image mr-2"></i>
                       Thay ảnh
-                    </a>
+                  </label>
+                  <input type="file" class="hidden" id="mobile-avatar">
                     <!-- mobile only -->
                     <a
                       href="#"
@@ -1158,13 +1159,14 @@
                           background-image: url('../Assets/image/audiA8.jpg');
                         "
                       ></div>
-                      <a
-                        class="change-avatar-button mx-auto uppercase block"
-                        href="#"
+                      <label
+                        class="change-avatar-button mx-auto uppercase block no-margin"
+                        for="avatar"
                       >
                         <i class="fal fa-image"></i>
                         Thay ảnh
-                      </a>
+                      </label>
+                      <input type="file" class="hidden" id="avatar">
                       <div class="uppercase text-sm">JPG, JPEG & PNG</div>
                     </div>
                   </div>
